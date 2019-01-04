@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="f702ed50-3c80-4224-a68f-9e60675070f0" name="Default Changelist" comment="">
+    <list default="true" id="f702ed50-3c80-4224-a68f-9e60675070f0" name="Default Changelist" comment="at the beginning">
       <change afterPath="$PROJECT_DIR$/.gradle/4.8/fileChanges/last-build.bin" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/.gradle/4.8/fileHashes/fileHashes.bin" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/.gradle/4.8/fileHashes/fileHashes.lock" afterDir="false" />
@@ -11,38 +11,13 @@
       <change afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/cache.properties" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/outputFiles.bin" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/.gradle/vcsWorkingDirs/gc.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/gradle.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/3/8/38ab2cbc780213f65616c83fe0cb0fc7baaabc6e" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/3/c/3cb11217c064b9f3ddae287f941a154a228c1b80" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/6/e/6ef58dab1acce85beaacc1e38c7810305d9fe293" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/a/0/a069858fbc5df7730d27e43a3bc3c48c98fe48c2" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/a/3/a338df772a997d556a54a31b096042e4045d9949" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/c/c/cc352468e0201587e134893b3810537722921140" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/f/9/f975c29df81a6dee0763f49d4dd580a81c81513d" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/index.pb" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/build.gradle" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/gradle/wrapper/gradle-wrapper.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/gradle/wrapper/gradle-wrapper.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/gradlew" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/gradlew.bat" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/out/production/classes/com/leapYear/LeapYear.class" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/out/production/classes/com/lineWrap/LineWrap.class" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/out/production/classes/com/similarString/SimilarStrHandler.class" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/out/test/classes/com/leapYear/LeapYearTest.class" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/out/test/classes/com/lineWrap/LineWrapTest.class" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/out/test/classes/com/similarString/SimilarStrHandlerTest.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/settings.gradle" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/leapYear/LeapYear.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/lineWrap/LineWrap.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/lineWrap/task.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/similarString/SimilarStrHandler.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/similarString/task.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/com/leapYear/LeapYearTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/com/lineWrap/LineWrapTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/com/similarString/SimilarStrHandlerTest.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/.gradle/" />
@@ -95,6 +70,7 @@
         <counts>
           <entry key="java" value="26" />
           <entry key="md" value="3" />
+          <entry key="properties" value="1" />
           <entry key="txt" value="1" />
           <entry key="xml" value="1" />
         </counts>
@@ -104,21 +80,23 @@
           <entry key="JAVA" value="26" />
           <entry key="Markdown" value="3" />
           <entry key="PLAIN_TEXT" value="1" />
+          <entry key="Properties" value="1" />
           <entry key="XML" value="1" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
           <entry key="ft" value="39" />
-          <entry key="java" value="2860" />
+          <entry key="java" value="2861" />
           <entry key="md" value="468" />
+          <entry key="txt" value="30" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="JAVA" value="2862" />
+          <entry key="JAVA" value="2863" />
           <entry key="Markdown" value="448" />
-          <entry key="PLAIN_TEXT" value="18" />
+          <entry key="PLAIN_TEXT" value="48" />
           <entry key="VTL" value="39" />
         </counts>
       </usages-collector>
@@ -130,11 +108,20 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/lineWrap/LineWrap.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="594">
-              <caret line="27" column="3" lean-forward="true" selection-start-line="27" selection-start-column="3" selection-end-line="27" selection-end-column="3" />
+            <state relative-caret-position="374">
+              <caret line="17" column="25" lean-forward="true" selection-start-line="17" selection-start-column="25" selection-end-line="17" selection-end-column="25" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/.gradle/buildOutputCleanup/cache.properties">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="44">
+              <caret line="2" lean-forward="true" selection-start-line="2" selection-end-line="2" />
             </state>
           </provider>
         </entry>
@@ -481,8 +468,8 @@
         <option value="$PROJECT_DIR$/src/test/java/com/lineWrap/LineWrapTest.java" />
         <option value="$PROJECT_DIR$/src/test/java/com/similarString/SimilarStrHandlerTest.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/similarString/SimilarStrHandler.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/lineWrap/LineWrap.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/leapYear/11.xml" />
+        <option value="$PROJECT_DIR$/src/main/java/com/lineWrap/LineWrap.java" />
       </list>
     </option>
   </component>
@@ -538,6 +525,24 @@
             <path>
               <item name="SHP_TDD" type="b2602c69:ProjectViewProjectNode" />
               <item name="SHP_TDD" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+            </path>
+            <path>
+              <item name="SHP_TDD" type="b2602c69:ProjectViewProjectNode" />
+              <item name="SHP_TDD" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name=".gradle" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="SHP_TDD" type="b2602c69:ProjectViewProjectNode" />
+              <item name="SHP_TDD" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name=".gradle" type="462c0819:PsiDirectoryNode" />
+              <item name="4.8" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="SHP_TDD" type="b2602c69:ProjectViewProjectNode" />
+              <item name="SHP_TDD" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name=".gradle" type="462c0819:PsiDirectoryNode" />
+              <item name="4.8" type="462c0819:PsiDirectoryNode" />
+              <item name="fileHashes" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="SHP_TDD" type="b2602c69:ProjectViewProjectNode" />
@@ -621,9 +626,10 @@
   </component>
   <component name="PropertiesComponent">
     <property name="SONARLINT_ISSUES_SPLIT_PROPORTION" value="0.53979427" />
+    <property name="SONARLINT_PRECOMMIT_ANALYSIS" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1546600801339" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1546601231829" />
     <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary" value="JUnit4" />
     <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit4" value="" />
     <property name="extract.method.default.visibility" value="private" />
@@ -775,8 +781,23 @@
       <workItem from="1542508976821" duration="4501000" />
       <workItem from="1542598796695" duration="605000" />
       <workItem from="1542605395428" duration="1908000" />
-      <workItem from="1546600757557" duration="265000" />
+      <workItem from="1546600757557" duration="524000" />
     </task>
+    <task id="LOCAL-00001" summary="at the beginning">
+      <created>1546601146153</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1546601146153</updated>
+    </task>
+    <task id="LOCAL-00002" summary="at the beginning">
+      <created>1546601247596</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1546601247596</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TestHistory">
@@ -812,7 +833,7 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="53615000" />
+    <option name="totallyTimeSpent" value="53874000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
@@ -829,7 +850,7 @@
       <window_info anchor="bottom" id="Event Log" order="1" side_tool="true" />
       <window_info anchor="bottom" id="Database Changes" order="2" show_stripe_button="false" />
       <window_info anchor="bottom" id="Messages" order="3" />
-      <window_info anchor="bottom" id="Version Control" order="4" />
+      <window_info anchor="bottom" id="Version Control" order="4" visible="true" />
       <window_info anchor="bottom" id="Build" order="5" weight="0.32936078" />
       <window_info anchor="bottom" id="Message" order="6" />
       <window_info anchor="bottom" id="Find" order="7" />
@@ -856,6 +877,10 @@
   </component>
   <component name="VcsContentAnnotationSettings">
     <option name="myLimit" value="2678400000" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="at the beginning" />
+    <option name="LAST_COMMIT_MESSAGE" value="at the beginning" />
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/src/main/java/com/similarString/task.md">
@@ -967,8 +992,15 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/lineWrap/LineWrap.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="594">
-          <caret line="27" column="3" lean-forward="true" selection-start-line="27" selection-start-column="3" selection-end-line="27" selection-end-column="3" />
+        <state relative-caret-position="374">
+          <caret line="17" column="25" lean-forward="true" selection-start-line="17" selection-start-column="25" selection-end-line="17" selection-end-column="25" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/.gradle/buildOutputCleanup/cache.properties">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="44">
+          <caret line="2" lean-forward="true" selection-start-line="2" selection-end-line="2" />
         </state>
       </provider>
     </entry>
