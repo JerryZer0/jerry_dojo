@@ -2,22 +2,13 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="f702ed50-3c80-4224-a68f-9e60675070f0" name="Default Changelist" comment="at the beginning">
-      <change afterPath="$PROJECT_DIR$/.gradle/4.8/fileChanges/last-build.bin" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.gradle/4.8/fileHashes/fileHashes.bin" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.gradle/4.8/fileHashes/fileHashes.lock" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.gradle/4.8/taskHistory/taskHistory.bin" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.gradle/4.8/taskHistory/taskHistory.lock" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/cache.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/outputFiles.bin" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.gradle/vcsWorkingDirs/gc.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/out/production/classes/com/leapYear/LeapYear.class" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/out/production/classes/com/lineWrap/LineWrap.class" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/out/production/classes/com/similarString/SimilarStrHandler.class" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/out/test/classes/com/leapYear/LeapYearTest.class" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/out/test/classes/com/lineWrap/LineWrapTest.class" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/out/test/classes/com/similarString/SimilarStrHandlerTest.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/.gradle/" />
@@ -108,20 +99,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/lineWrap/LineWrap.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="374">
-              <caret line="17" column="25" lean-forward="true" selection-start-line="17" selection-start-column="25" selection-end-line="17" selection-end-column="25" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/.gradle/buildOutputCleanup/cache.properties">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="44">
-              <caret line="2" lean-forward="true" selection-start-line="2" selection-end-line="2" />
+            <state relative-caret-position="308">
+              <caret line="14" column="49" lean-forward="true" selection-start-line="14" selection-start-column="49" selection-end-line="14" selection-end-column="49" />
             </state>
           </provider>
         </entry>
@@ -529,94 +511,13 @@
             <path>
               <item name="SHP_TDD" type="b2602c69:ProjectViewProjectNode" />
               <item name="SHP_TDD" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name=".gradle" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="SHP_TDD" type="b2602c69:ProjectViewProjectNode" />
-              <item name="SHP_TDD" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name=".gradle" type="462c0819:PsiDirectoryNode" />
-              <item name="4.8" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="SHP_TDD" type="b2602c69:ProjectViewProjectNode" />
-              <item name="SHP_TDD" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name=".gradle" type="462c0819:PsiDirectoryNode" />
-              <item name="4.8" type="462c0819:PsiDirectoryNode" />
-              <item name="fileHashes" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="SHP_TDD" type="b2602c69:ProjectViewProjectNode" />
-              <item name="SHP_TDD" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="SHP_TDD" type="b2602c69:ProjectViewProjectNode" />
-              <item name="SHP_TDD" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-            </path>
-            <path>
-              <item name="SHP_TDD" type="b2602c69:ProjectViewProjectNode" />
-              <item name="SHP_TDD" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="SHP_TDD" type="b2602c69:ProjectViewProjectNode" />
-              <item name="SHP_TDD" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="com" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="SHP_TDD" type="b2602c69:ProjectViewProjectNode" />
               <item name="SHP_TDD" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="test" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-            </path>
-            <path>
-              <item name="SHP_TDD" type="b2602c69:ProjectViewProjectNode" />
-              <item name="SHP_TDD" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="test" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="SHP_TDD" type="b2602c69:ProjectViewProjectNode" />
-              <item name="SHP_TDD" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="test" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="com" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="SHP_TDD" type="b2602c69:ProjectViewProjectNode" />
-              <item name="SHP_TDD" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="test" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="com" type="462c0819:PsiDirectoryNode" />
-              <item name="leapYear" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="SHP_TDD" type="b2602c69:ProjectViewProjectNode" />
-              <item name="SHP_TDD" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="test" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="com" type="462c0819:PsiDirectoryNode" />
-              <item name="lineWrap" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="SHP_TDD" type="b2602c69:ProjectViewProjectNode" />
-              <item name="SHP_TDD" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="test" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="com" type="462c0819:PsiDirectoryNode" />
-              <item name="similarString" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -629,7 +530,7 @@
     <property name="SONARLINT_PRECOMMIT_ANALYSIS" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1546601231829" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1546602836941" />
     <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary" value="JUnit4" />
     <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit4" value="" />
     <property name="extract.method.default.visibility" value="private" />
@@ -669,7 +570,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="JUnit.LineWrapTest.should_return_the_string_with_wrap_and_add_space_when_call_wrapLine_given_string_is_longer_than_length">
+  <component name="RunManager" selected="JUnit.LineWrapTest.should_return_the_string_with_wrap_when_call_wrapLine_given_string_is_longer_than_length">
     <configuration name="LineWrapTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="SHP_TDD_test" />
       <extension name="coverage">
@@ -700,6 +601,22 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="LineWrapTest.should_return_the_string_with_wrap_when_call_wrapLine_given_string_is_longer_than_length" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="SHP_TDD_test" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.lineWrap.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.lineWrap" />
+      <option name="MAIN_CLASS_NAME" value="com.lineWrap.LineWrapTest" />
+      <option name="METHOD_NAME" value="should_return_the_string_with_wrap_when_call_wrapLine_given_string_is_longer_than_length" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="SimilarStrHandlerTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="SHP_TDD_test" />
       <extension name="coverage">
@@ -710,22 +627,6 @@
       </extension>
       <option name="PACKAGE_NAME" value="com.similarString" />
       <option name="MAIN_CLASS_NAME" value="com.similarString.SimilarStrHandlerTest" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="SimilarStrHandlerTest.should_return_false_when_compare_two_strings_given_ab_and_abc" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="SHP_TDD_test" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.similarString.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="com.similarString" />
-      <option name="MAIN_CLASS_NAME" value="com.similarString.SimilarStrHandlerTest" />
-      <option name="METHOD_NAME" value="should_return_false_when_compare_two_strings_given_ab_and_abc" />
-      <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -749,17 +650,17 @@
     <list>
       <item itemvalue="JUnit.LineWrapTest" />
       <item itemvalue="JUnit.LineWrapTest.should_return_the_string_with_wrap_and_add_space_when_call_wrapLine_given_string_is_longer_than_length" />
-      <item itemvalue="JUnit.SimilarStrHandlerTest.should_return_false_when_compare_two_strings_given_ab_and_abc" />
       <item itemvalue="JUnit.SimilarStrHandlerTest.should_return_false_when_compare_two_strings_given_ab_and_ac" />
       <item itemvalue="JUnit.SimilarStrHandlerTest" />
+      <item itemvalue="JUnit.LineWrapTest.should_return_the_string_with_wrap_when_call_wrapLine_given_string_is_longer_than_length" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.LineWrapTest.should_return_the_string_with_wrap_when_call_wrapLine_given_string_is_longer_than_length" />
         <item itemvalue="JUnit.LineWrapTest.should_return_the_string_with_wrap_and_add_space_when_call_wrapLine_given_string_is_longer_than_length" />
         <item itemvalue="JUnit.LineWrapTest" />
         <item itemvalue="JUnit.SimilarStrHandlerTest" />
         <item itemvalue="JUnit.SimilarStrHandlerTest.should_return_false_when_compare_two_strings_given_ab_and_ac" />
-        <item itemvalue="JUnit.SimilarStrHandlerTest.should_return_false_when_compare_two_strings_given_ab_and_abc" />
       </list>
     </recent_temporary>
   </component>
@@ -781,7 +682,7 @@
       <workItem from="1542508976821" duration="4501000" />
       <workItem from="1542598796695" duration="605000" />
       <workItem from="1542605395428" duration="1908000" />
-      <workItem from="1546600757557" duration="524000" />
+      <workItem from="1546600757557" duration="1610000" />
     </task>
     <task id="LOCAL-00001" summary="at the beginning">
       <created>1546601146153</created>
@@ -797,7 +698,14 @@
       <option name="project" value="LOCAL" />
       <updated>1546601247596</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="at the beginning">
+      <created>1546601293722</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1546601293722</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TestHistory">
@@ -833,7 +741,7 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="53874000" />
+    <option name="totallyTimeSpent" value="54960000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
@@ -850,7 +758,7 @@
       <window_info anchor="bottom" id="Event Log" order="1" side_tool="true" />
       <window_info anchor="bottom" id="Database Changes" order="2" show_stripe_button="false" />
       <window_info anchor="bottom" id="Messages" order="3" />
-      <window_info anchor="bottom" id="Version Control" order="4" visible="true" />
+      <window_info anchor="bottom" id="Version Control" order="4" visible="true" weight="0.48777777" />
       <window_info anchor="bottom" id="Build" order="5" weight="0.32936078" />
       <window_info anchor="bottom" id="Message" order="6" />
       <window_info anchor="bottom" id="Find" order="7" />
@@ -874,6 +782,32 @@
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State>
+              <option name="RECENTLY_FILTERED_USER_GROUPS">
+                <collection />
+              </option>
+              <option name="RECENTLY_FILTERED_BRANCH_GROUPS">
+                <collection />
+              </option>
+              <option name="COLUMN_ORDER">
+                <list>
+                  <option value="0" />
+                  <option value="1" />
+                  <option value="2" />
+                  <option value="3" />
+                </list>
+              </option>
+            </State>
+          </value>
+        </entry>
+      </map>
+    </option>
   </component>
   <component name="VcsContentAnnotationSettings">
     <option name="myLimit" value="2678400000" />
@@ -990,17 +924,17 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/lineWrap/LineWrap.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="374">
-          <caret line="17" column="25" lean-forward="true" selection-start-line="17" selection-start-column="25" selection-end-line="17" selection-end-column="25" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/.gradle/buildOutputCleanup/cache.properties">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="44">
           <caret line="2" lean-forward="true" selection-start-line="2" selection-end-line="2" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/lineWrap/LineWrap.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="308">
+          <caret line="14" column="49" lean-forward="true" selection-start-line="14" selection-start-column="49" selection-end-line="14" selection-end-column="49" />
         </state>
       </provider>
     </entry>
