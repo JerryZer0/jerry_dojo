@@ -26,7 +26,7 @@ public class CalculatePriceTest {
         + "-----------------------------------------------------\n"
         + "Total price                          854.8";
     //then
-    assertEquals("test",expectResult);
+    assertEquals(expectResult,ticket);
   }
 
 }
