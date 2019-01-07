@@ -32,18 +32,9 @@ public class Item {
     this.price = price;
   }
 
-  private Item() {
-    this.name = "apple";
-    this.count = 1;
-    this.price = 800.0;
-  }
-
-  public static List<Item> createList(int count){
-    List<Item> itemList = new ArrayList<>();
-    for(int i=0;i<count;i++){
-      Item item = new Item();
-      itemList.add(item);
-    }
-    return itemList;
+  public Item(String name, int count, double price) {
+    this.name = name;
+    this.count = count;
+    this.price = price;
   }
 }
