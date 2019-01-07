@@ -31,7 +31,9 @@ class CalculatePrice {
           .append(item.getPrice() * item.getCount())
           .append("\n");
     }
-    discount += totalWithOutTaxes * 0;
+    if(totalWithOutTaxes>1000){
+      discount += totalWithOutTaxes * 0.03;
+    }
     tax = totalWithOutTaxes * 0.0685;
     total = totalWithOutTaxes - discount + tax;
     result.append("\n")
