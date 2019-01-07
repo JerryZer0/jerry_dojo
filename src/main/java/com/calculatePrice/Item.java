@@ -32,13 +32,13 @@ public class Item {
     this.price = price;
   }
 
-  public Item() {
+  private Item() {
     this.name = "apple";
     this.count = 1;
     this.price = 800;
   }
 
-  public List<Item> createList(int count){
+  public static List<Item> createList(int count){
     List<Item> itemList = new ArrayList<>();
     for(int i=0;i<count;i++){
       Item item = new Item();
