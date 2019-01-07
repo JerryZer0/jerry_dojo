@@ -102,7 +102,7 @@ public class CalculatePriceTest {
   }
 
   @Test
-  public void should_return_ticket_info_with_discount_7_when_call_printTicket_given_two_kinds_good_with_total_price_more_than_5000_in_UT() {
+  public void should_return_ticket_info_with_discount_7_when_call_printTicket_given_two_kinds_good_with_total_price_more_than_7000_in_UT() {
     //given
     List<Item> items = new ArrayList<>();
     Item apple = new Item("apple", 10, 500.0);
@@ -121,6 +121,30 @@ public class CalculatePriceTest {
         + "Tax  6.85%                           +616.5\n"
         + "----------------------------------------\n"
         + "Total price                          8986.5";
+    //then
+    assertEquals(expectResult, ticket);
+  }
+
+  @Test
+  public void should_return_ticket_info_with_discount_10_when_call_printTicket_given_two_kinds_good_with_total_price_more_than_10000_in_UT() {
+    //given
+    List<Item> items = new ArrayList<>();
+    Item apple = new Item("apple", 20, 500.0);
+    items.add(apple);
+    Item banana = new Item("banana", 10, 400.0);
+    items.add(banana);
+    CalculatePrice calculatePrice = new CalculatePrice(items, "UT");
+    //when
+    String ticket = calculatePrice.getTicketInfo();
+    String expectResult = "apple        20        500.0        10000.0\n"
+        + "banana        10        400.0        4000.0\n"
+        + "\n"
+        + "----------------------------------------\n"
+        + "Total without taxes                  14000.0\n"
+        + "Discout 10%                           -1400.0\n"
+        + "Tax  6.85%                           +959.0\n"
+        + "----------------------------------------\n"
+        + "Total price                          13559.0";
     //then
     assertEquals(expectResult, ticket);
   }
