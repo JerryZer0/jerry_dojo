@@ -34,8 +34,10 @@ class CalculatePrice {
     }
     if (totalWithOutTaxes > 1000 && totalWithOutTaxes <=5000) {
       taxNum = 3;
-    }else if(totalWithOutTaxes>5000){
+    }else if(totalWithOutTaxes>5000&& totalWithOutTaxes <=7000){
       taxNum = 5;
+    }else if(totalWithOutTaxes>7000){
+      taxNum = 7;
     }
     discount += totalWithOutTaxes * taxNum / 100;
     tax = totalWithOutTaxes * 0.0685;
