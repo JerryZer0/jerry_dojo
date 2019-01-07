@@ -12,6 +12,7 @@ class CalculatePrice {
   private double tax = 0;
   private double total = 0;
   private int taxNum;
+  private double stateTax;
 
   public CalculatePrice(List<Item> items, String stateCode) {
     this.items = items;
@@ -20,6 +21,7 @@ class CalculatePrice {
 
   String getTicketInfo() {
     DecimalFormat df = new DecimalFormat("#0.0");
+    DecimalFormat df2 = new DecimalFormat("#0.00");
     StringBuilder result = new StringBuilder();
     for (Item item : items) {
       totalWithOutTaxes += item.getPrice() * item.getCount();
@@ -43,8 +45,27 @@ class CalculatePrice {
     } else if (totalWithOutTaxes > 50000) {
       taxNum = 15;
     }
+    switch (stateCode) {
+      case "UT":
+        stateTax = 0.0685;
+        break;
+      case "NV":
+        stateTax = 0.08;
+        break;
+      case "TX":
+        stateTax = 0.0625;
+        break;
+      case "AL":
+        stateTax = 0.04;
+        break;
+      case "CA":
+        stateTax = 0.0825;
+        break;
+      default:
+        break;
+    }
     discount += totalWithOutTaxes * taxNum / 100;
-    tax = totalWithOutTaxes * 0.0685;
+    tax = totalWithOutTaxes * stateTax;
     total = totalWithOutTaxes - discount + tax;
     result.append("\n")
         .append("----------------------------------------\n")
@@ -55,7 +76,9 @@ class CalculatePrice {
         .append(taxNum)
         .append("%                           ")
         .append("-" + discount + "\n")
-        .append("Tax  6.85%                           ")
+        .append("Tax  ")
+        .append(df2.format(stateTax*100))
+        .append("%                           ")
         .append("+")
         .append(df.format(tax))
         .append("\n")
