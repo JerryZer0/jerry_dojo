@@ -11,6 +11,7 @@ class CalculatePrice {
   private double discount = 0;
   private double tax = 0;
   private double total = 0;
+  private int taxNum;
 
   public CalculatePrice(List<Item> items, String stateCode) {
     this.items = items;
@@ -31,9 +32,10 @@ class CalculatePrice {
           .append(item.getPrice() * item.getCount())
           .append("\n");
     }
-    if(totalWithOutTaxes>1000){
-      discount += totalWithOutTaxes * 0.03;
+    if (totalWithOutTaxes > 1000) {
+      taxNum = 3;
     }
+    discount += totalWithOutTaxes * taxNum / 100;
     tax = totalWithOutTaxes * 0.0685;
     total = totalWithOutTaxes - discount + tax;
     result.append("\n")
@@ -41,7 +43,9 @@ class CalculatePrice {
         .append("Total without taxes                  ")
         .append(totalWithOutTaxes)
         .append("\n")
-        .append("Discout 0%                           ")
+        .append("Discout ")
+        .append(taxNum)
+        .append("%                           ")
         .append("-" + discount + "\n")
         .append("Tax  6.85%                           ")
         .append("+")
