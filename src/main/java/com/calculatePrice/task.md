@@ -12,7 +12,7 @@ then return the ticket with no discount
 ```
 - task 3
 ```text
-given one kind of item with total price more than 1000 and state is UT
+given two kinds of item with total price more than 1000 and state is UT
 when call getTicketInfo()
 then return the ticket with discount rate is 3%
 ```
