@@ -6,7 +6,7 @@ import java.util.List;
 public class Item {
   private String name;
   private int count;
-  private int price;
+  private double price;
 
   public String getName() {
     return name;
@@ -24,18 +24,18 @@ public class Item {
     this.count = count;
   }
 
-  public int getPrice() {
+  public double getPrice() {
     return price;
   }
 
-  public void setPrice(int price) {
+  public void setPrice(double price) {
     this.price = price;
   }
 
   private Item() {
     this.name = "apple";
     this.count = 1;
-    this.price = 800;
+    this.price = 800.0;
   }
 
   public static List<Item> createList(int count){

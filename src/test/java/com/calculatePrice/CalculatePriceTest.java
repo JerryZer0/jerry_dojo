@@ -17,13 +17,13 @@ public class CalculatePriceTest {
     items = Item.createList(1);
     //when
     String ticket = calculatePrice.getTicketInfo(items,"UT");
-    String expectResult = "apple        1          800          800\n"
+    String expectResult = "apple        1        800.0        800.0\n"
         + "\n"
-        + "-----------------------------------------------------\n"
-        + "Total without taxes                  800\n"
+        + "----------------------------------------\n"
+        + "Total without taxes                  800.0\n"
         + "Discout 0%                           -0\n"
-        + "Tax 3%                               +54.8\n"
-        + "-----------------------------------------------------\n"
+        + "Tax  6.85%                           +54.8\n"
+        + "----------------------------------------\n"
         + "Total price                          854.8";
     //then
     assertEquals(expectResult,ticket);
