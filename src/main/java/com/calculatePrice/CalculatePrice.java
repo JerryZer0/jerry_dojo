@@ -32,14 +32,16 @@ class CalculatePrice {
           .append(item.getPrice() * item.getCount())
           .append("\n");
     }
-    if (totalWithOutTaxes > 1000 && totalWithOutTaxes <=5000) {
+    if (totalWithOutTaxes > 1000 && totalWithOutTaxes <= 5000) {
       taxNum = 3;
-    }else if(totalWithOutTaxes>5000&& totalWithOutTaxes <=7000){
+    } else if (totalWithOutTaxes > 5000 && totalWithOutTaxes <= 7000) {
       taxNum = 5;
-    }else if(totalWithOutTaxes>7000&& totalWithOutTaxes <=10000){
+    } else if (totalWithOutTaxes > 7000 && totalWithOutTaxes <= 10000) {
       taxNum = 7;
-    }else if(totalWithOutTaxes>10000){
+    } else if (totalWithOutTaxes > 10000 && totalWithOutTaxes <= 50000) {
       taxNum = 10;
+    } else if (totalWithOutTaxes > 50000) {
+      taxNum = 15;
     }
     discount += totalWithOutTaxes * taxNum / 100;
     tax = totalWithOutTaxes * 0.0685;

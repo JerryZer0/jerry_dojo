@@ -149,4 +149,27 @@ public class CalculatePriceTest {
     assertEquals(expectResult, ticket);
   }
 
+  @Test
+  public void should_return_ticket_info_with_no_discount_when_call_printTicket_given_two_kinds_good_with_total_price_less_than_1000_in_NV() {
+    //given
+    List<Item> items = new ArrayList<>();
+    Item apple = new Item("apple", 1, 400.0);
+    items.add(apple);
+    Item banana = new Item("banana", 1, 400.0);
+    items.add(banana);
+    CalculatePrice calculatePrice = new CalculatePrice(items, "NV");
+    //when
+    String ticket = calculatePrice.getTicketInfo();
+    String expectResult = "apple        1        400.0        400.0\n"
+        + "banana        1        400.0        400.0\n"
+        + "\n"
+        + "----------------------------------------\n"
+        + "Total without taxes                  800.0\n"
+        + "Discout 0%                           -0.0\n"
+        + "Tax  8.00%                           +64.0\n"
+        + "----------------------------------------\n"
+        + "Total price                          864.0";
+    //then
+    assertEquals(expectResult, ticket);
+  }
 }
