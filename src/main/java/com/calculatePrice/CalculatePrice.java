@@ -14,7 +14,7 @@ class CalculatePrice {
   private int taxNum;
   private double stateTax;
 
-  public CalculatePrice(List<Item> items, String stateCode) {
+  CalculatePrice(List<Item> items, String stateCode) {
     this.items = items;
     this.stateCode = stateCode;
   }
@@ -45,7 +45,8 @@ class CalculatePrice {
         .append("Discout ")
         .append(taxNum)
         .append("%                           ")
-        .append("-" + discount + "\n")
+        .append("-")
+        .append(discount).append("\n")
         .append("Tax  ")
         .append(df2.format(stateTax * 100))
         .append("%                           ")
