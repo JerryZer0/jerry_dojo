@@ -11,7 +11,7 @@ class CalculatePrice {
   private double discount = 0;
   private double tax = 0;
   private double total = 0;
-  private int taxNum;
+  private int discountRate;
   private double stateTax;
 
   CalculatePrice(List<Item> items, String stateCode) {
@@ -25,11 +25,11 @@ class CalculatePrice {
     StringBuilder result = new StringBuilder();
     for (Item item : items) {
       totalWithOutTaxes += item.getPrice() * item.getCount();
-      setItemInfomation(result, item);
+      setItemInformation(result, item);
     }
-    setTaxNum();
-    setStateCode();
-    discount += totalWithOutTaxes * taxNum / 100;
+    discountRate = getDiscountRate();
+    setStateTax();
+    discount += totalWithOutTaxes * discountRate / 100;
     tax = totalWithOutTaxes * stateTax;
     total = totalWithOutTaxes - discount + tax;
     setTotalResult(df, df2, result);
@@ -43,7 +43,7 @@ class CalculatePrice {
         .append(totalWithOutTaxes)
         .append("\n")
         .append("Discout ")
-        .append(taxNum)
+        .append(discountRate)
         .append("%                           ")
         .append("-")
         .append(discount).append("\n")
@@ -58,7 +58,7 @@ class CalculatePrice {
         .append(total);
   }
 
-  private void setItemInfomation(StringBuilder result, Item item) {
+  private void setItemInformation(StringBuilder result, Item item) {
     result.append(item.getName())
         .append("        ")
         .append(item.getCount())
@@ -69,21 +69,26 @@ class CalculatePrice {
         .append("\n");
   }
 
-  private void setTaxNum() {
-    if (totalWithOutTaxes > 1000 && totalWithOutTaxes <= 5000) {
-      taxNum = 3;
-    } else if (totalWithOutTaxes > 5000 && totalWithOutTaxes <= 7000) {
-      taxNum = 5;
-    } else if (totalWithOutTaxes > 7000 && totalWithOutTaxes <= 10000) {
-      taxNum = 7;
-    } else if (totalWithOutTaxes > 10000 && totalWithOutTaxes <= 50000) {
-      taxNum = 10;
-    } else if (totalWithOutTaxes > 50000) {
-      taxNum = 15;
+  private int getDiscountRate() {
+    if (totalWithOutTaxes <= 1000) {
+      return 0;
     }
+    if (totalWithOutTaxes <= 5000) {
+      return 3;
+    }
+    if (totalWithOutTaxes <= 7000) {
+      return 5;
+    }
+    if (totalWithOutTaxes <= 10000) {
+      return 7;
+    }
+    if (totalWithOutTaxes <= 50000) {
+      return 10;
+    }
+    return 15;
   }
 
-  private void setStateCode() {
+  private void setStateTax() {
     switch (stateCode) {
       case "UT":
         stateTax = 0.0685;
