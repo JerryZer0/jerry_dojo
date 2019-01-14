@@ -54,4 +54,8 @@ public class BookList {
   public void setFifthCopy(int fifthCopy) {
     this.fifthCopy = fifthCopy;
   }
+
+  public int getCounts(){
+    return fifthCopy+secondCopy+thirdCopy+fourthCopy+fifthCopy;
+  }
 }
