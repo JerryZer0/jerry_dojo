@@ -1,6 +1,6 @@
 - task 1
 ```text
-given total count of books
+given list of books
 when call getTotalPrice
 then return the price without discount
 ```
