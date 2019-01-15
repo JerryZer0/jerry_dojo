@@ -28,4 +28,7 @@ public class BooksManager {
     return plans;
   }
 
+  public float getDiscount() {
+    return 0;
+  }
 }

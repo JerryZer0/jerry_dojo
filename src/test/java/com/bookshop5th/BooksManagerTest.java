@@ -41,4 +41,15 @@ public class BooksManagerTest {
     assertEquals(2,plans.size());
     assertEquals(1,plans.get(0).intValue());
   }
+
+  @Test
+  public void should_return_discount_is_9_when_call_get_discount_given_books_count_is_3(){
+    //given
+    BookList list = new BookList(1,1,1,0,0);
+    BooksManager booksManager = new BooksManager(list);
+    //when
+    float discount = booksManager.getDiscount();
+    //then
+    assertEquals(9,discount,0);
+  }
 }
