@@ -3,14 +3,14 @@ package com.bookshop5th;
 import java.util.ArrayList;
 import java.util.List;
 
-public class Plan {
-  private List<Integer> plan = new ArrayList<>();
+class Plan {
+  private List<Integer> counts = new ArrayList<>();
 
-  public Plan(List<Integer> plan) {
-    this.plan = plan;
+  Plan(List<Integer> counts) {
+    this.counts = counts;
   }
 
-  public List<Integer> getPlan() {
-    return plan;
+  List<Integer> getCounts() {
+    return counts;
   }
 }

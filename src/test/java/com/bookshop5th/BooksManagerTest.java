@@ -27,7 +27,7 @@ public class BooksManagerTest {
     List<Plan> plans = booksManager.getPlans();
     //then
     assertEquals(1,plans.size());
-    assertEquals(5,plans.get(0).getPlan().get(0).intValue());
+    assertEquals(5,plans.get(0).getCounts().get(0).intValue());
   }
 
   @Test
@@ -39,7 +39,7 @@ public class BooksManagerTest {
     List<Plan> plans = booksManager.getPlans();
     //then
     assertEquals(1,plans.size());
-    assertEquals(1,plans.get(0).getPlan().get(0).intValue());
+    assertEquals(1,plans.get(0).getCounts().get(0).intValue());
   }
 
   @Test
