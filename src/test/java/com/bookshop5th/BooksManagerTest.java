@@ -29,4 +29,16 @@ public class BooksManagerTest {
     assertEquals(1,plans.size());
     assertEquals(5,plans.get(0).intValue());
   }
+
+  @Test
+  public void should_return_a_plan_when_call_get_plan_given_2_books_of_a_same_kind(){
+    //given
+    BookList list = new BookList(2,0,0,0,0);
+    BooksManager booksManager = new BooksManager(list);
+    //when
+    List<Integer> plans = booksManager.getPlans();
+    //then
+    assertEquals(2,plans.size());
+    assertEquals(1,plans.get(0).intValue());
+  }
 }
