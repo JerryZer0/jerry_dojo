@@ -20,8 +20,8 @@ public class BooksManager {
     this.list = list;
   }
 
-  public float getTotalPrice() {
-    return PRICE*list.getCounts();
+  public float getTotalPrice(int count, float discount) {
+    return PRICE*count*discount;
   }
 
   public List<Integer> getPlans() {
@@ -36,12 +36,16 @@ public class BooksManager {
     return plans;
   }
 
-  public float getDiscount() {
-    float discount = DISCOUNT_TABLE.get(list.getCounts());
+  public float getDiscount(int count) {
+    float discount = DISCOUNT_TABLE.get(count);
     return discount;
   }
 
   public float calculate() {
-    return 0;
+    float totalPrice = 0;
+    for(Integer count:getPlans()){
+      totalPrice += getTotalPrice(count,getDiscount(count));
+    }
+    return totalPrice;
   }
 }

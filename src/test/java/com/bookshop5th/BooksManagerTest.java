@@ -13,7 +13,7 @@ public class BooksManagerTest {
     BookList list = new BookList(1,1,1,1,1);
     BooksManager booksManager = new BooksManager(list);
     //when
-    float result = booksManager.getTotalPrice();
+    float result = booksManager.getTotalPrice(list.getCounts(),1);
     //then
     assertEquals(40.00, result,0);
   }
@@ -48,19 +48,19 @@ public class BooksManagerTest {
     BookList list = new BookList(1,1,1,0,0);
     BooksManager booksManager = new BooksManager(list);
     //when
-    float discount = booksManager.getDiscount();
+    float discount = booksManager.getDiscount(list.getCounts());
     //then
     assertEquals(0.9f,discount,0);
   }
 
   @Test
-  public void should_return_32_when_call_calculate_given_4_books(){
+  public void should_return_result_after_discount_when_call_calculate_given_4_books(){
     //given
-    BookList list = new BookList(1,1,1,1,1);
+    BookList list = new BookList(1,1,1,1,0);
     BooksManager booksManager = new BooksManager(list);
     //when
     float result = booksManager.calculate();
     //then
-    assertEquals(32.00, result,0);
+    assertEquals(25.6f, result,0);
   }
 }
