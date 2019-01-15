@@ -1,10 +1,9 @@
 package com.bookshop5th;
 
-import java.util.ArrayList;
 import java.util.List;
 
 class Plan {
-  private List<Integer> counts = new ArrayList<>();
+  private List<Integer> counts;
 
   Plan(List<Integer> counts) {
     this.counts = counts;
