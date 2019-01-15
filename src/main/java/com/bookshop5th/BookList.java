@@ -3,11 +3,11 @@ package com.bookshop5th;
 import java.util.ArrayList;
 import java.util.List;
 
-public class BookList {
+class BookList {
 
   private List<Integer> books = new ArrayList<>();
 
-  public BookList(int firstCopy, int secondCopy, int thirdCopy, int fourthCopy, int fifthCopy) {
+  BookList(int firstCopy, int secondCopy, int thirdCopy, int fourthCopy, int fifthCopy) {
     books.add(firstCopy);
     books.add(secondCopy);
     books.add(thirdCopy);
@@ -15,7 +15,7 @@ public class BookList {
     books.add(fifthCopy);
   }
 
-  public int getCounts(){
+  int getCounts(){
     int counts=0;
     for(Integer count:books){
       counts+=count;
@@ -23,7 +23,7 @@ public class BookList {
     return counts ;
   }
 
-  public void reduceBooks(){
+  void reduceBooks(){
     for(int i=0;i<5;i++){
       if(books.get(i)>0){
         books.set(i,books.get(i)-1);
