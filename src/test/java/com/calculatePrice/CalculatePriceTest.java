@@ -20,11 +20,11 @@ public class CalculatePriceTest {
     String expectResult = "apple        1        800.0        800.0\n"
         + "\n"
         + "----------------------------------------\n"
-        + "Total without taxes                  800.0\n"
-        + "Discout 0%                           -0.0\n"
-        + "Tax  6.85%                           +54.8\n"
+        + "Total without taxes                800.0\n"
+        + "Discout 0%                        -0.0\n"
+        + "Tax  6.85%                        +54.8\n"
         + "----------------------------------------\n"
-        + "Total price                          854.8";
+        + "Total price                        854.8";
     //then
     assertEquals(expectResult, ticket);
   }
@@ -44,11 +44,11 @@ public class CalculatePriceTest {
         + "banana        1        400.0        400.0\n"
         + "\n"
         + "----------------------------------------\n"
-        + "Total without taxes                  800.0\n"
-        + "Discout 0%                           -0.0\n"
-        + "Tax  6.85%                           +54.8\n"
+        + "Total without taxes                800.0\n"
+        + "Discout 0%                        -0.0\n"
+        + "Tax  6.85%                        +54.8\n"
         + "----------------------------------------\n"
-        + "Total price                          854.8";
+        + "Total price                        854.8";
     //then
     assertEquals(expectResult, ticket);
   }
@@ -68,11 +68,11 @@ public class CalculatePriceTest {
         + "banana        1        400.0        400.0\n"
         + "\n"
         + "----------------------------------------\n"
-        + "Total without taxes                  1200.0\n"
-        + "Discout 3%                           -36.0\n"
-        + "Tax  6.85%                           +82.2\n"
+        + "Total without taxes                1200.0\n"
+        + "Discout 3%                        -36.0\n"
+        + "Tax  6.85%                        +82.2\n"
         + "----------------------------------------\n"
-        + "Total price                          1246.2";
+        + "Total price                        1246.2";
     //then
     assertEquals(expectResult, ticket);
   }
@@ -92,11 +92,11 @@ public class CalculatePriceTest {
         + "banana        1        400.0        400.0\n"
         + "\n"
         + "----------------------------------------\n"
-        + "Total without taxes                  5400.0\n"
-        + "Discout 5%                           -270.0\n"
-        + "Tax  6.85%                           +369.9\n"
+        + "Total without taxes                5400.0\n"
+        + "Discout 5%                        -270.0\n"
+        + "Tax  6.85%                        +369.9\n"
         + "----------------------------------------\n"
-        + "Total price                          5499.9";
+        + "Total price                        5499.9";
     //then
     assertEquals(expectResult, ticket);
   }
@@ -116,11 +116,11 @@ public class CalculatePriceTest {
         + "banana        10        400.0        4000.0\n"
         + "\n"
         + "----------------------------------------\n"
-        + "Total without taxes                  9000.0\n"
-        + "Discout 7%                           -630.0\n"
-        + "Tax  6.85%                           +616.5\n"
+        + "Total without taxes                9000.0\n"
+        + "Discout 7%                        -630.0\n"
+        + "Tax  6.85%                        +616.5\n"
         + "----------------------------------------\n"
-        + "Total price                          8986.5";
+        + "Total price                        8986.5";
     //then
     assertEquals(expectResult, ticket);
   }
@@ -140,11 +140,11 @@ public class CalculatePriceTest {
         + "banana        10        400.0        4000.0\n"
         + "\n"
         + "----------------------------------------\n"
-        + "Total without taxes                  14000.0\n"
-        + "Discout 10%                           -1400.0\n"
-        + "Tax  6.85%                           +959.0\n"
+        + "Total without taxes                14000.0\n"
+        + "Discout 10%                        -1400.0\n"
+        + "Tax  6.85%                        +959.0\n"
         + "----------------------------------------\n"
-        + "Total price                          13559.0";
+        + "Total price                        13559.0";
     //then
     assertEquals(expectResult, ticket);
   }
@@ -164,11 +164,11 @@ public class CalculatePriceTest {
         + "banana        1        400.0        400.0\n"
         + "\n"
         + "----------------------------------------\n"
-        + "Total without taxes                  800.0\n"
-        + "Discout 0%                           -0.0\n"
-        + "Tax  8.00%                           +64.0\n"
+        + "Total without taxes                800.0\n"
+        + "Discout 0%                        -0.0\n"
+        + "Tax  8.00%                        +64.0\n"
         + "----------------------------------------\n"
-        + "Total price                          864.0";
+        + "Total price                        864.0";
     //then
     assertEquals(expectResult, ticket);
   }

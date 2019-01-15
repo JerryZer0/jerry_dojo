@@ -17,6 +17,7 @@ class CalculatePrice {
   private double stateTax;
   private static final Map<String,Double> STATE_TABLE = new TreeMap<>();
   private static final Map<Integer,Integer> DISCOUNT_TABLE = new TreeMap<>();
+  private static final String TAB = "        ";
   static {
     STATE_TABLE.put("UT", 0.0685);
     STATE_TABLE.put("NV", 0.08);
@@ -57,22 +58,22 @@ class CalculatePrice {
     DecimalFormat df2 = new DecimalFormat("#0.00");
     result.append("\n")
         .append("----------------------------------------\n")
-        .append("Total without taxes                  ")
+        .append("Total without taxes"+TAB+TAB)
         .append(totalWithOutTaxes)
         .append("\n")
         .append("Discout ")
         .append(discountRate)
-        .append("%                           ")
+        .append("%"+TAB+TAB+TAB)
         .append("-")
         .append(discount).append("\n")
         .append("Tax  ")
         .append(df2.format(stateTax * 100))
-        .append("%                           ")
+        .append("%"+TAB+TAB+TAB)
         .append("+")
         .append(df.format(tax))
         .append("\n")
         .append("----------------------------------------\n")
-        .append("Total price                          ")
+        .append("Total price"+TAB+TAB+TAB)
         .append(total);
     return result.toString();
   }
@@ -80,11 +81,11 @@ class CalculatePrice {
   private String setItemInformation(Item item) {
     StringBuilder result = new StringBuilder();
     result.append(item.getName())
-        .append("        ")
+        .append(TAB)
         .append(item.getCount())
-        .append("        ")
+        .append(TAB)
         .append(item.getPrice())
-        .append("        ")
+        .append(TAB)
         .append(item.getPrice() * item.getCount())
         .append("\n");
     return result.toString();
