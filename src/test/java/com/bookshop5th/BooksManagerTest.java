@@ -8,7 +8,7 @@ import org.junit.Test;
 public class BooksManagerTest {
 
   @Test
-  public void should_return_40_when_call_calcute_given_5_books(){
+  public void should_return_40_when_call_total_price_given_5_books(){
     //given
     BookList list = new BookList(1,1,1,1,1);
     BooksManager booksManager = new BooksManager(list);
@@ -51,5 +51,16 @@ public class BooksManagerTest {
     float discount = booksManager.getDiscount();
     //then
     assertEquals(0.9f,discount,0);
+  }
+
+  @Test
+  public void should_return_32_when_call_calculate_given_4_books(){
+    //given
+    BookList list = new BookList(1,1,1,1,1);
+    BooksManager booksManager = new BooksManager(list);
+    //when
+    float result = booksManager.calculate();
+    //then
+    assertEquals(32.00, result,0);
   }
 }

@@ -40,4 +40,8 @@ public class BooksManager {
     float discount = DISCOUNT_TABLE.get(list.getCounts());
     return discount;
   }
+
+  public float calculate() {
+    return 0;
+  }
 }
