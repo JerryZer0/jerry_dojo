@@ -1,5 +1,6 @@
 package com.bookshop5th;
 
+import java.util.Arrays;
 import java.util.List;
 
 public class BooksManager {
@@ -15,6 +16,6 @@ public class BooksManager {
   }
 
   public List<Integer> getPlans() {
-    return null;
+    return Arrays.asList(5);
   }
 }
