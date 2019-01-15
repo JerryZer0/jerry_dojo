@@ -24,10 +24,10 @@ public class BooksManagerTest {
     BookList list = new BookList(1,1,1,1,1);
     BooksManager booksManager = new BooksManager(list);
     //when
-    List<Integer> plans = booksManager.getPlans();
+    List<Plan> plans = booksManager.getPlans();
     //then
     assertEquals(1,plans.size());
-    assertEquals(5,plans.get(0).intValue());
+    assertEquals(5,plans.get(0).getPlan().get(0).intValue());
   }
 
   @Test
@@ -36,10 +36,10 @@ public class BooksManagerTest {
     BookList list = new BookList(2,0,0,0,0);
     BooksManager booksManager = new BooksManager(list);
     //when
-    List<Integer> plans = booksManager.getPlans();
+    List<Plan> plans = booksManager.getPlans();
     //then
-    assertEquals(2,plans.size());
-    assertEquals(1,plans.get(0).intValue());
+    assertEquals(1,plans.size());
+    assertEquals(1,plans.get(0).getPlan().get(0).intValue());
   }
 
   @Test

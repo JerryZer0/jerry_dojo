@@ -1,6 +1,7 @@
 package com.bookshop5th;
 
 import java.util.ArrayList;
+import java.util.Arrays;
 import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
@@ -24,15 +25,18 @@ class BooksManager {
     return price *count*discount;
   }
 
-  List<Integer> getPlans() {
+  List<Plan> getPlans() {
     int counts = list.getCounts();
-    List<Integer> plans = new ArrayList<>();
+    List<Integer> plan = new ArrayList<>();
     while(counts>0){
       list.reduceBooks();
       int tempCounts = list.getCounts();
-      plans.add(counts-tempCounts);
+      plan.add(counts-tempCounts);
       counts = tempCounts;
     }
+    Plan tempPlan = new Plan(plan);
+    List<Plan> plans = new ArrayList<>();
+    plans.add(tempPlan);
     return plans;
   }
 
@@ -42,7 +46,8 @@ class BooksManager {
 
   float calculate() {
     float totalPrice = 0;
-    for(Integer count:getPlans()){
+    Plan plan = getPlans().get(0);
+    for(Integer count:plan.getPlan()){
       totalPrice += getTotalPrice(count,getDiscount(count));
     }
     return totalPrice;
