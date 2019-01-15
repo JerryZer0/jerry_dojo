@@ -2,6 +2,8 @@ package com.calculatePrice;
 
 import java.text.DecimalFormat;
 import java.util.List;
+import java.util.Map;
+import java.util.TreeMap;
 
 class CalculatePrice {
 
@@ -13,6 +15,21 @@ class CalculatePrice {
   private double total = 0;
   private int discountRate;
   private double stateTax;
+  private static final Map<String,Double> STATE_TABLE = new TreeMap<>();
+  private static final Map<Integer,Integer> DISCOUNT_TABLE = new TreeMap<>();
+  static {
+    STATE_TABLE.put("UT", 0.0685);
+    STATE_TABLE.put("NV", 0.08);
+    STATE_TABLE.put("TX", 0.0625);
+    STATE_TABLE.put("AL", 0.04);
+    STATE_TABLE.put("CA", 0.0825);
+
+    DISCOUNT_TABLE.put(1000,0);
+    DISCOUNT_TABLE.put(5000,3);
+    DISCOUNT_TABLE.put(7000,5);
+    DISCOUNT_TABLE.put(10000,7);
+    DISCOUNT_TABLE.put(50000,10);
+  }
 
   CalculatePrice(List<Item> items, String stateCode) {
     this.items = items;
@@ -20,23 +37,24 @@ class CalculatePrice {
   }
 
   String getTicketInfo() {
-    DecimalFormat df = new DecimalFormat("#0.0");
-    DecimalFormat df2 = new DecimalFormat("#0.00");
-    StringBuilder result = new StringBuilder();
+    String result = "";
     for (Item item : items) {
       totalWithOutTaxes += item.getPrice() * item.getCount();
-      setItemInformation(result, item);
+      result += setItemInformation(item);
     }
     discountRate = getDiscountRate();
-    setStateTax();
+    stateTax = STATE_TABLE.get(stateCode);
     discount += totalWithOutTaxes * discountRate / 100;
     tax = totalWithOutTaxes * stateTax;
     total = totalWithOutTaxes - discount + tax;
-    setTotalResult(df, df2, result);
-    return result.toString();
+    result += setTotalResult();
+    return result;
   }
 
-  private void setTotalResult(DecimalFormat df, DecimalFormat df2, StringBuilder result) {
+  private String setTotalResult() {
+    StringBuilder result = new StringBuilder();
+    DecimalFormat df = new DecimalFormat("#0.0");
+    DecimalFormat df2 = new DecimalFormat("#0.00");
     result.append("\n")
         .append("----------------------------------------\n")
         .append("Total without taxes                  ")
@@ -56,9 +74,11 @@ class CalculatePrice {
         .append("----------------------------------------\n")
         .append("Total price                          ")
         .append(total);
+    return result.toString();
   }
 
-  private void setItemInformation(StringBuilder result, Item item) {
+  private String setItemInformation(Item item) {
+    StringBuilder result = new StringBuilder();
     result.append(item.getName())
         .append("        ")
         .append(item.getCount())
@@ -67,46 +87,16 @@ class CalculatePrice {
         .append("        ")
         .append(item.getPrice() * item.getCount())
         .append("\n");
+    return result.toString();
   }
 
   private int getDiscountRate() {
-    if (totalWithOutTaxes <= 1000) {
-      return 0;
+    int currentDiscount = 15;
+    for(int price:DISCOUNT_TABLE.keySet()){
+      if(totalWithOutTaxes < price){
+        return DISCOUNT_TABLE.get(price);
+      }
     }
-    if (totalWithOutTaxes <= 5000) {
-      return 3;
-    }
-    if (totalWithOutTaxes <= 7000) {
-      return 5;
-    }
-    if (totalWithOutTaxes <= 10000) {
-      return 7;
-    }
-    if (totalWithOutTaxes <= 50000) {
-      return 10;
-    }
-    return 15;
-  }
-
-  private void setStateTax() {
-    switch (stateCode) {
-      case "UT":
-        stateTax = 0.0685;
-        break;
-      case "NV":
-        stateTax = 0.08;
-        break;
-      case "TX":
-        stateTax = 0.0625;
-        break;
-      case "AL":
-        stateTax = 0.04;
-        break;
-      case "CA":
-        stateTax = 0.0825;
-        break;
-      default:
-        break;
-    }
+    return currentDiscount;
   }
 }
