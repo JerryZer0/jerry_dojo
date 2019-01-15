@@ -50,6 +50,6 @@ public class BooksManagerTest {
     //when
     float discount = booksManager.getDiscount();
     //then
-    assertEquals(9,discount,0);
+    assertEquals(0.9f,discount,0);
   }
 }
