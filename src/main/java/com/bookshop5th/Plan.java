@@ -1,17 +1,30 @@
 package com.bookshop5th;
 
+import java.util.ArrayList;
 import java.util.List;
 
 abstract class Plan {
-  public BookList bookList;
 
-  public Plan(BookList bookList) {
+  BookList bookList;
+  List<Integer> books;
+
+  Plan(BookList bookList) {
     this.bookList = bookList;
+    this.books = bookList.getBooks();
+
   }
 
-  public BookList getBookList() {
-    return bookList;
+  List<Integer> getPlan() {
+    int counts = bookList.getCounts();
+    List<Integer> plan = new ArrayList<>();
+    while (counts > 0) {
+      pickBooks();
+      int tempCounts = bookList.getCounts();
+      plan.add(counts - tempCounts);
+      counts = tempCounts;
+    }
+    return plan;
   }
 
-  abstract List<Integer> getPlan();
+  abstract void pickBooks();
 }

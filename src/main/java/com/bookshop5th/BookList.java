@@ -23,11 +23,7 @@ class BookList {
     return counts ;
   }
 
-  void reduceBooks(){
-    for(int i=0;i<5;i++){
-      if(books.get(i)>0){
-        books.set(i,books.get(i)-1);
-      }
-    }
+  List<Integer> getBooks() {
+    return books;
   }
 }
