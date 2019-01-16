@@ -2,14 +2,16 @@ package com.bookshop5th;
 
 import java.util.List;
 
-class Plan {
-  private List<Integer> counts;
+abstract class Plan {
+  public BookList bookList;
 
-  Plan(List<Integer> counts) {
-    this.counts = counts;
+  public Plan(BookList bookList) {
+    this.bookList = bookList;
   }
 
-  List<Integer> getCounts() {
-    return counts;
+  public BookList getBookList() {
+    return bookList;
   }
+
+  abstract List<Integer> getPlan();
 }
