@@ -25,15 +25,7 @@ class BooksManager {
   }
 
   List<Plan> getPlans() {
-    int counts = list.getCounts();
-    List<Integer> plan = new ArrayList<>();
-    while(counts>0){
-      list.reduceBooks();
-      int tempCounts = list.getCounts();
-      plan.add(counts-tempCounts);
-      counts = tempCounts;
-    }
-    Plan tempPlan = new Plan(plan);
+    Plan tempPlan = new CategoryPriorityPlan(list);
     List<Plan> plans = new ArrayList<>();
     plans.add(tempPlan);
     return plans;
@@ -46,7 +38,7 @@ class BooksManager {
   float calculate() {
     float totalPrice = 0;
     Plan plan = getPlans().get(0);
-    for(Integer count:plan.getCounts()){
+    for(Integer count:plan.getPlan()){
       totalPrice += getTotalPrice(count,getDiscount(count));
     }
     return totalPrice;

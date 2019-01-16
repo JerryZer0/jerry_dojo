@@ -58,7 +58,7 @@ public class BooksManagerTest {
   }
 
   @Test
-  public void should_return_result_after_discount_when_call_calculate_given_4_books() {
+  public void should_return_result_after_discount_when_call_calculate_given_5_books() {
     //given
     BookList list = new BookList(1, 1, 3, 1, 0);
     BooksManager booksManager = new BooksManager(list);
