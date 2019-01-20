@@ -147,6 +147,8 @@ public class CalculatePriceTest {
         + "Total price                          13559.0";
     //then
     assertEquals(expectResult, ticket);
+    int xc=1000000000;
+    System.out.println(xc);
   }
 
   @Test
