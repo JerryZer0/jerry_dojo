@@ -22,7 +22,20 @@ class CarMileage {
     if (isDecrementingSequential(mileages)) {
       return interesting;
     }
+    if (isPalindrome(mileages)) {
+      return interesting;
+    }
     return boring;
+  }
+
+  private boolean isPalindrome(char[] mileages) {
+    int middle = mileages.length / 2;
+    for (int i = 0; i < middle; i++) {
+      if (mileages[i] != mileages[mileages.length - i - 1]) {
+        return false;
+      }
+    }
+    return true;
   }
 
   private boolean isDecrementingSequential(char[] mileages) {
