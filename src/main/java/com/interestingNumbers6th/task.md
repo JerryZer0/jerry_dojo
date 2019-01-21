@@ -37,14 +37,18 @@ when judge the number
 then return 2
 ```
 
-
  - task 7
 ```text
 given a number(7890) match digits are in a incrementing sequential and empty array
 when judge the number
 then return 2
 ```
-
+ - task 8
+```text
+given a number(78901) match digits are in a incrementing sequential and empty array
+when judge the number
+then return 0
+```
 
 
 
