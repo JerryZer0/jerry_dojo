@@ -91,8 +91,6 @@ given a number(798) and a empty array
 when judge the number
 then return 1
 ```
-
-
  - task 15
 ```text
 given a number(109) and a empty array  
@@ -103,6 +101,20 @@ then return 1
  - task 16
 ```text
 given a number(110) and a empty array  
+when judge the number
+then return 1
+```
+
+ - task 17
+```text
+given a number(1232) and a empty array  
+when judge the number
+then return 1
+```
+
+ - task 18
+```text
+given a number(1233) and a empty array  
 when judge the number
 then return 1
 ```
