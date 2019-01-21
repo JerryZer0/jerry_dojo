@@ -37,9 +37,7 @@ class CarMileage {
   private boolean isIncrementingSequential(char[] mileages) {
     for (int i = 0; i < mileages.length - 1; i++) {
       if (mileages[i] + 1 != mileages[i + 1]) {
-        if (mileages[i] != '9' || mileages[i+1] != '0') {
-          return false;
-        }
+        return mileages[i] == '9' && mileages[i + 1] == '0' && (i + 2 == mileages.length);
       }
     }
     return true;
