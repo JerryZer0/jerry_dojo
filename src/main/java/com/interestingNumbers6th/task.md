@@ -16,75 +16,74 @@ given a number(10) match digit followed by all zeros and empty array
 when judge the number
 then return 0
 ```
+ - task 4
+```text
+ given a number(111) match every digit is the same number and empty array
+ when judge the number
+ then return 2
+```
+
+ - task 5
+```text
+given a number(123) match digits are in a incrementing sequential and empty array
+when judge the number
+then return 2
+```
+
+ - task 6
+```text
+given a number(321) match digits are in a decrementing sequential and empty array
+when judge the number
+then return 2
+```
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
  
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
--task3
+ 
+ 
+- task 6
 ```text
-givenanumbermatcheverydigitisthesamenumberandemptyarray
-whenjudgethenumber
-thenreturn2
+given a number is a palindrome and empty array
+when judge the number
+then return 2
 ```
--task4
+- task 7
 ```text
-givenanumbermatchdigitsareinaincrementingsequentialandemptyarray
-whenjudgethenumber
-thenreturn2
+given a number and is the number in array
+when judge the number
+then return 2
 ```
--task5
+- task 8
 ```text
-givenanumbermatchdigitsareinadecrementingsequentialandemptyarray
-whenjudgethenumber
-thenreturn2
+given a number and is the number less than 2 of a number in array
+when judge the number
+then return 1
 ```
--task6
+- task 9
 ```text
-givenanumberisapalindromeandemptyarray
-whenjudgethenumber
-thenreturn2
-```
--task7
-```text
-givenanumberandisthenumberinarray
-whenjudgethenumber
-thenreturn2
-```
--task8
-```text
-givenanumberandisthenumberlessthan2ofanumberinarray
-whenjudgethenumber
-thenreturn1
-```
--task9
-```text
-givenanumberdidnotmatchtherulesandemptyarray
-whenjudgethenumber
-thenreturn0
-```
+given a number did not match the rules and empty array
+when judge the number
+then return 0
+

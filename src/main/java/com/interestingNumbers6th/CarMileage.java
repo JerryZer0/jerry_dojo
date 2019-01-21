@@ -16,15 +16,27 @@ class CarMileage {
     if (isSameNumber(mileages)) {
       return interesting;
     }
-    if(isSequential(mileages)){
+    if (isIncrementingSequential(mileages)) {
+      return interesting;
+    }
+    if (isDecrementingSequential(mileages)) {
       return interesting;
     }
     return boring;
   }
 
-  private boolean isSequential(char[] mileages) {
-    for (int i = 0; i < mileages.length-1; i++) {
-      if (mileages[i]+1 != mileages[i+1]) {
+  private boolean isDecrementingSequential(char[] mileages) {
+    for (int i = 0; i < mileages.length - 1; i++) {
+      if (mileages[i] - 1 != mileages[i + 1]) {
+        return false;
+      }
+    }
+    return true;
+  }
+
+  private boolean isIncrementingSequential(char[] mileages) {
+    for (int i = 0; i < mileages.length - 1; i++) {
+      if (mileages[i] + 1 != mileages[i + 1]) {
         return false;
       }
     }

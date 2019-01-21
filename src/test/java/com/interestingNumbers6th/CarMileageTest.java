@@ -21,7 +21,7 @@ public class CarMileageTest {
   }
 
   @Test
-  public void  should_return_interesting_when_execute_is_interesting_given_num_100_and_empty_array() {
+  public void should_return_interesting_when_execute_is_interesting_given_num_100_and_empty_array() {
     CarMileage carMileage = new CarMileage();
     int awesomePhrases[] = {};
 
@@ -56,6 +56,16 @@ public class CarMileageTest {
     int awesomePhrases[] = {};
 
     int result = carMileage.isInteresting(123, awesomePhrases);
+
+    assertThat(result, is(interesting));
+  }
+
+  @Test
+  public void should_return_interesting_when_execute_is_interesting_given_num_321_and_empty_array() {
+    CarMileage carMileage = new CarMileage();
+    int awesomePhrases[] = {};
+
+    int result = carMileage.isInteresting(321, awesomePhrases);
 
     assertThat(result, is(interesting));
   }
