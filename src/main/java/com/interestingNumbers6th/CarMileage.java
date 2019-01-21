@@ -3,6 +3,7 @@ package com.interestingNumbers6th;
 class CarMileage {
 
   private static int interesting = 2;
+  private static int nearInteresting = 1;
   private static int boring = 0;
 
   int isInteresting(int mileage, int[] awesomePhrases) {
@@ -27,6 +28,30 @@ class CarMileage {
     }
     if (isPalindrome(mileages)) {
       return interesting;
+    }
+    return isNearInteresting(mileage, awesomePhrases);
+  }
+
+
+  private int isNearInteresting(int mileage, int[] awesomePhrases) {
+    if (isInWesomePhrases(mileage + 1, awesomePhrases) || isInWesomePhrases(mileage + 2, awesomePhrases)) {
+      return nearInteresting;
+    }
+    char[] mileages = String.valueOf(mileage).toCharArray();
+    if (isFollowedByAllZeros(mileages)) {
+      return nearInteresting;
+    }
+    if (isSameNumber(mileages)) {
+      return nearInteresting;
+    }
+    if (isIncrementingSequential(mileages)) {
+      return nearInteresting;
+    }
+    if (isDecrementingSequential(mileages)) {
+      return nearInteresting;
+    }
+    if (isPalindrome(mileages)) {
+      return nearInteresting;
     }
     return boring;
   }
