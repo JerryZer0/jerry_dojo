@@ -45,6 +45,9 @@ class CarMileage {
     if (isSameNumber(nexts) || isSameNumber(nextNexts)) {
       return nearInteresting;
     }
+    if (isIncrementingSequential(nexts)|| isIncrementingSequential(nextNexts)) {
+      return nearInteresting;
+    }
 
     return boring;
   }
