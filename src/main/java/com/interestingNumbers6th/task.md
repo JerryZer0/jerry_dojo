@@ -50,6 +50,12 @@ when judge the number
 then return 0
 ```
 
+ - task 9
+```text
+given a number(1221) match digits are a palindrome and empty array
+when judge the number
+then return 2
+```
 
 
 
