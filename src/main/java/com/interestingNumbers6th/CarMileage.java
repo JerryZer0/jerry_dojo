@@ -9,6 +9,9 @@ class CarMileage {
     if (mileage < 100) {
       return boring;
     }
+    if (isInWesomePhrases(mileage, awesomePhrases)) {
+      return interesting;
+    }
     char[] mileages = String.valueOf(mileage).toCharArray();
     if (isFollowedByAllZeros(mileages)) {
       return interesting;
@@ -26,6 +29,15 @@ class CarMileage {
       return interesting;
     }
     return boring;
+  }
+
+  private boolean isInWesomePhrases(int mileage, int[] awesomePhrases) {
+    for (int awesomePhrase : awesomePhrases) {
+      if (mileage == awesomePhrase) {
+        return true;
+      }
+    }
+    return false;
   }
 
   private boolean isPalindrome(char[] mileages) {
