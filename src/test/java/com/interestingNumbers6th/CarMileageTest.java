@@ -7,8 +7,8 @@ import org.junit.Test;
 
 public class CarMileageTest {
 
-  static int interesting = 2;
-  static int boring = 0;
+  private static int interesting = 2;
+  private static int boring = 0;
 
   @Test
   public void should_return_boring_when_execute_is_interesting_given_num_1_and_empty_array() {
@@ -21,7 +21,7 @@ public class CarMileageTest {
   }
 
   @Test
-  public void should_return_interesting_when_execute_is_interesting_given_num_100_and_empty_array() {
+  public void  should_return_interesting_when_execute_is_interesting_given_num_100_and_empty_array() {
     CarMileage carMileage = new CarMileage();
     int awesomePhrases[] = {};
 

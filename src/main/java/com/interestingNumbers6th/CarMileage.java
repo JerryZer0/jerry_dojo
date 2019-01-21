@@ -2,26 +2,39 @@ package com.interestingNumbers6th;
 
 class CarMileage {
 
-  static int interesting = 2;
-  static int boring = 0;
+  private static int interesting = 2;
+  private static int boring = 0;
 
   int isInteresting(int mileage, int[] awesomePhrases) {
-    if(mileage <100){
+    if (mileage < 100) {
       return boring;
     }
-    if (isFollowedByAllZeros(mileage)) {
+    char[] mileages = String.valueOf(mileage).toCharArray();
+    if (isFollowedByAllZeros(mileages)) {
+      return interesting;
+    }
+    if (isSameNumber(mileages)) {
       return interesting;
     }
     return boring;
   }
 
-  private boolean isFollowedByAllZeros(int num) {
-    while ((num % 10) == 0) {
-      num = num / 10;
-      if (num < 10) {
-        return true;
+  private boolean isSameNumber(char[] mileages) {
+    char first = mileages[0];
+    for (int i = 1; i < mileages.length; i++) {
+      if (mileages[i] != first) {
+        return false;
       }
     }
-    return false;
+    return true;
+  }
+
+  private boolean isFollowedByAllZeros(char[] mileages) {
+    for (int i = 1; i < mileages.length; i++) {
+      if (mileages[i] != '0') {
+        return false;
+      }
+    }
+    return true;
   }
 }
