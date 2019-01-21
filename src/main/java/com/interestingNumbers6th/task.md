@@ -68,15 +68,30 @@ then return 2
 ```text
 given a number(254) and a array contains 256
 when judge the number
-then return 2
+then return 1
 ```
 
  - task 12
 ```text
 given a number(255) and a array contains 256
 when judge the number
-then return 2
+then return 1
 ```
+
+ - task 13
+```text
+given a number(799) and a empty array  
+when judge the number
+then return 1
+```
+
+ - task 14
+```text
+given a number(798) and a empty array  
+when judge the number
+then return 1
+```
+
 
 
 
