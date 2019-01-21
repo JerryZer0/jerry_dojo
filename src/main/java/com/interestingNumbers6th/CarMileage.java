@@ -51,7 +51,9 @@ class CarMileage {
     if (isDecrementingSequential(nexts) || isDecrementingSequential(nextNexts)) {
       return nearInteresting;
     }
-
+    if (isPalindrome(nexts)||isPalindrome(nextNexts)) {
+      return nearInteresting;
+    }
     return boring;
   }
 
