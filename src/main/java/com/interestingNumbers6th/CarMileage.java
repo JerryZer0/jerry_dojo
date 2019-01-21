@@ -16,8 +16,21 @@ class CarMileage {
     if (isSameNumber(mileages)) {
       return interesting;
     }
+    if(isSequential(mileages)){
+      return interesting;
+    }
     return boring;
   }
+
+  private boolean isSequential(char[] mileages) {
+    for (int i = 0; i < mileages.length-1; i++) {
+      if (mileages[i]+1 != mileages[i+1]) {
+        return false;
+      }
+    }
+    return true;
+  }
+
 
   private boolean isSameNumber(char[] mileages) {
     char first = mileages[0];
@@ -37,4 +50,5 @@ class CarMileage {
     }
     return true;
   }
+
 }
