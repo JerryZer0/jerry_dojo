@@ -152,4 +152,24 @@ public class CarMileageTest {
 
     assertThat(result, is(nearInteresting));
   }
+
+  @Test
+  public void should_return_near_interesting_when_execute_is_interesting_given_num_109_and_empty_array() {
+    CarMileage carMileage = new CarMileage();
+    int awesomePhrases[] = {};
+
+    int result = carMileage.isInteresting(109, awesomePhrases);
+
+    assertThat(result, is(nearInteresting));
+  }
+
+  @Test
+  public void should_return_near_interesting_when_execute_is_interesting_given_num_110_and_empty_array() {
+    CarMileage carMileage = new CarMileage();
+    int awesomePhrases[] = {};
+
+    int result = carMileage.isInteresting(110, awesomePhrases);
+
+    assertThat(result, is(nearInteresting));
+  }
 }

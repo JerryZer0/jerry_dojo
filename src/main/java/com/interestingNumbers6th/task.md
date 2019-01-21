@@ -93,6 +93,20 @@ then return 1
 ```
 
 
+ - task 15
+```text
+given a number(109) and a empty array  
+when judge the number
+then return 1
+```
+
+ - task 16
+```text
+given a number(110) and a empty array  
+when judge the number
+then return 1
+```
+
 
 
 
