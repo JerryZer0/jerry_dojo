@@ -132,7 +132,19 @@ given a number(4319) and a empty array
 when judge the number
 then return 1
 ```
+ - task 21
+```text
+given a number(120) and a empty array  
+when judge the number
+then return 1
+```
 
+ - task 22
+```text
+given a number(119) and a empty array  
+when judge the number
+then return 1
+```
 
 
 
