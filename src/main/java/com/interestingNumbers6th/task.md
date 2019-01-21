@@ -119,6 +119,19 @@ when judge the number
 then return 1
 ```
 
+ - task 19
+```text
+given a number(4320) and a empty array  
+when judge the number
+then return 1
+```
+
+ - task 20
+```text
+given a number(4319) and a empty array  
+when judge the number
+then return 1
+```
 
 
 
