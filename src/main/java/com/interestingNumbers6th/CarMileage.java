@@ -42,6 +42,10 @@ class CarMileage {
     if (isFollowedByAllZeros(nexts) || isFollowedByAllZeros(nextNexts)) {
       return nearInteresting;
     }
+    if (isSameNumber(nexts) || isSameNumber(nextNexts)) {
+      return nearInteresting;
+    }
+
     return boring;
   }
 
