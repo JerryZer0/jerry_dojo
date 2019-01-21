@@ -99,4 +99,14 @@ public class CarMileageTest {
 
     assertThat(result, is(interesting));
   }
+
+  @Test
+  public void should_return_interesting_when_execute_is_interesting_given_num_256_and_a_array_contain_256() {
+    CarMileage carMileage = new CarMileage();
+    int awesomePhrases[] = {256};
+
+    int result = carMileage.isInteresting(256, awesomePhrases);
+
+    assertThat(result, is(interesting));
+  }
 }

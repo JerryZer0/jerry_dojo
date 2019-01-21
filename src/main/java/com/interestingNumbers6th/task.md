@@ -57,6 +57,12 @@ when judge the number
 then return 2
 ```
 
+ - task 10
+```text
+given a number(256) and a array contains 256
+when judge the number
+then return 2
+```
 
 
 
