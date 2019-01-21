@@ -148,7 +148,7 @@ public class CarMileageTest {
     CarMileage carMileage = new CarMileage();
     int awesomePhrases[] = {};
 
-    int result = carMileage.isInteresting(79, awesomePhrases);
+    int result = carMileage.isInteresting(798, awesomePhrases);
 
     assertThat(result, is(nearInteresting));
   }

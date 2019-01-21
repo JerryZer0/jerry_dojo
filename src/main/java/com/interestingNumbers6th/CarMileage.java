@@ -37,20 +37,9 @@ class CarMileage {
     if (isInWesomePhrases(mileage + 1, awesomePhrases) || isInWesomePhrases(mileage + 2, awesomePhrases)) {
       return nearInteresting;
     }
-    char[] mileages = String.valueOf(mileage).toCharArray();
-    if (isFollowedByAllZeros(mileages)) {
-      return nearInteresting;
-    }
-    if (isSameNumber(mileages)) {
-      return nearInteresting;
-    }
-    if (isIncrementingSequential(mileages)) {
-      return nearInteresting;
-    }
-    if (isDecrementingSequential(mileages)) {
-      return nearInteresting;
-    }
-    if (isPalindrome(mileages)) {
+    char[] nexts = String.valueOf(mileage+1).toCharArray();
+    char[] nextNexts = String.valueOf(mileage+2).toCharArray();
+    if (isFollowedByAllZeros(nexts) || isFollowedByAllZeros(nextNexts)) {
       return nearInteresting;
     }
     return boring;
