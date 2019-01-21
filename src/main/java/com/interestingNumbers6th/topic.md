@@ -5,7 +5,7 @@ Let's make it so Bob never misses another interesting number. We've hacked into 
 a box hooked up that reads mileage numbers. We've got a box glued to his dash that lights up yellow or green 
 depending on whether it receives a 1 or a 2 (respectively).
 
-It's up to you, intrepid warrior, to glue the parts together. Write the function that parses the mileage number input,
+  It's up to you, intrepid warrior, to glue the parts together. Write the function that parses the mileage number input,
  and returns a 2 if the number is "interesting" (see below), 
  a 1 if an interesting number occurs within the next two miles, 
  or a 0 if the number is not interesting.

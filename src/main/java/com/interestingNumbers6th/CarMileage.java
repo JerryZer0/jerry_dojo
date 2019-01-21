@@ -6,6 +6,9 @@ class CarMileage {
   static int boring = 0;
 
   int isInteresting(int mileage, int[] awesomePhrases) {
+    if(mileage <100){
+      return boring;
+    }
     if (isFollowedByAllZeros(mileage)) {
       return interesting;
     }
