@@ -1,10 +1,14 @@
 package com.interestingNumbers6th;
 
-public class InAwesomePhrasesRule implements InterestingRule {
+public class InAwesomePhrasesRule extends InterestingRule {
+
+  InAwesomePhrasesRule(int number, int[] area) {
+    super(number, area);
+  }
 
   @Override
-  public boolean isInteresting(int number, int awesomePhrases[]) {
-    for (int awesomePhrase : awesomePhrases) {
+  boolean isInteresting() {
+    for (int awesomePhrase : area) {
       if (number == awesomePhrase) {
         return true;
       }

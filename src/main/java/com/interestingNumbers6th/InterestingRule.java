@@ -1,5 +1,14 @@
 package com.interestingNumbers6th;
 
-public interface InterestingRule {
-  boolean isInteresting(int number, int awesomePhrases[]);
+abstract class InterestingRule {
+  int number;
+  int area[];
+  char[] numbers = String.valueOf(number).toCharArray();
+
+  InterestingRule(int number, int[] area) {
+    this.number = number;
+    this.area = area;
+  }
+
+  abstract boolean isInteresting();
 }
