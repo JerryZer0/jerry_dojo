@@ -2,32 +2,32 @@ package com.interestingNumbers6th;
 
 class CarMileage {
 
-  private static int interesting = 2;
-  private static int nearInteresting = 1;
-  private static int boring = 0;
+  private static int INTERESTING = 2;
+  private static int NEAR_INTERESTING = 1;
+  private static int BORING = 0;
 
   int isInteresting(int mileage, int[] awesomePhrases) {
     if (mileage < 100) {
-      return boring;
+      return BORING;
     }
     if (isInWesomePhrases(mileage, awesomePhrases)) {
-      return interesting;
+      return INTERESTING;
     }
     char[] mileages = String.valueOf(mileage).toCharArray();
     if (isFollowedByAllZeros(mileages)) {
-      return interesting;
+      return INTERESTING;
     }
     if (isSameNumber(mileages)) {
-      return interesting;
+      return INTERESTING;
     }
     if (isIncrementingSequential(mileages)) {
-      return interesting;
+      return INTERESTING;
     }
     if (isDecrementingSequential(mileages)) {
-      return interesting;
+      return INTERESTING;
     }
     if (isPalindrome(mileages)) {
-      return interesting;
+      return INTERESTING;
     }
     return isNearInteresting(mileage, awesomePhrases);
   }
@@ -35,26 +35,26 @@ class CarMileage {
 
   private int isNearInteresting(int mileage, int[] awesomePhrases) {
     if (isInWesomePhrases(mileage + 1, awesomePhrases) || isInWesomePhrases(mileage + 2, awesomePhrases)) {
-      return nearInteresting;
+      return NEAR_INTERESTING;
     }
     char[] nexts = String.valueOf(mileage + 1).toCharArray();
     char[] nextNexts = String.valueOf(mileage + 2).toCharArray();
     if (isFollowedByAllZeros(nexts) || isFollowedByAllZeros(nextNexts)) {
-      return nearInteresting;
+      return NEAR_INTERESTING;
     }
     if (isSameNumber(nexts) || isSameNumber(nextNexts)) {
-      return nearInteresting;
+      return NEAR_INTERESTING;
     }
     if (isIncrementingSequential(nexts) || isIncrementingSequential(nextNexts)) {
-      return nearInteresting;
+      return NEAR_INTERESTING;
     }
     if (isDecrementingSequential(nexts) || isDecrementingSequential(nextNexts)) {
-      return nearInteresting;
+      return NEAR_INTERESTING;
     }
     if (isPalindrome(nexts)||isPalindrome(nextNexts)) {
-      return nearInteresting;
+      return NEAR_INTERESTING;
     }
-    return boring;
+    return BORING;
   }
 
   private boolean isInWesomePhrases(int mileage, int[] awesomePhrases) {

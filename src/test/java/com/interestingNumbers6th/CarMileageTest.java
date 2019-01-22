@@ -7,9 +7,9 @@ import org.junit.Test;
 
 public class CarMileageTest {
 
-  private static int interesting = 2;
-  private static int nearInteresting = 1;
-  private static int boring = 0;
+  private static int INTERESTING = 2;
+  private static int NEAR_INTERESTING = 1;
+  private static int BORING = 0;
 
   @Test
   public void should_return_boring_when_execute_is_interesting_given_num_1_and_empty_array() {
@@ -18,7 +18,7 @@ public class CarMileageTest {
 
     int result = carMileage.isInteresting(1, awesomePhrases);
 
-    assertThat(result, is(boring));
+    assertThat(result, is(BORING));
   }
 
   @Test
@@ -28,7 +28,7 @@ public class CarMileageTest {
 
     int result = carMileage.isInteresting(100, awesomePhrases);
 
-    assertThat(result, is(interesting));
+    assertThat(result, is(INTERESTING));
   }
 
   @Test
@@ -38,7 +38,7 @@ public class CarMileageTest {
 
     int result = carMileage.isInteresting(10, awesomePhrases);
 
-    assertThat(result, is(boring));
+    assertThat(result, is(BORING));
   }
 
   @Test
@@ -48,7 +48,7 @@ public class CarMileageTest {
 
     int result = carMileage.isInteresting(111, awesomePhrases);
 
-    assertThat(result, is(interesting));
+    assertThat(result, is(INTERESTING));
   }
 
   @Test
@@ -58,7 +58,7 @@ public class CarMileageTest {
 
     int result = carMileage.isInteresting(123, awesomePhrases);
 
-    assertThat(result, is(interesting));
+    assertThat(result, is(INTERESTING));
   }
 
   @Test
@@ -68,7 +68,7 @@ public class CarMileageTest {
 
     int result = carMileage.isInteresting(321, awesomePhrases);
 
-    assertThat(result, is(interesting));
+    assertThat(result, is(INTERESTING));
   }
 
   @Test
@@ -78,7 +78,7 @@ public class CarMileageTest {
 
     int result = carMileage.isInteresting(7890, awesomePhrases);
 
-    assertThat(result, is(interesting));
+    assertThat(result, is(INTERESTING));
   }
 
   @Test
@@ -88,7 +88,7 @@ public class CarMileageTest {
 
     int result = carMileage.isInteresting(78901, awesomePhrases);
 
-    assertThat(result, is(boring));
+    assertThat(result, is(BORING));
   }
 
   @Test
@@ -98,7 +98,7 @@ public class CarMileageTest {
 
     int result = carMileage.isInteresting(1221, awesomePhrases);
 
-    assertThat(result, is(interesting));
+    assertThat(result, is(INTERESTING));
   }
 
   @Test
@@ -108,7 +108,7 @@ public class CarMileageTest {
 
     int result = carMileage.isInteresting(256, awesomePhrases);
 
-    assertThat(result, is(interesting));
+    assertThat(result, is(INTERESTING));
   }
 
 
@@ -120,7 +120,7 @@ public class CarMileageTest {
 
     int result = carMileage.isInteresting(254, awesomePhrases);
 
-    assertThat(result, is(nearInteresting));
+    assertThat(result, is(NEAR_INTERESTING));
   }
 
   @Test
@@ -130,7 +130,7 @@ public class CarMileageTest {
 
     int result = carMileage.isInteresting(255, awesomePhrases);
 
-    assertThat(result, is(nearInteresting));
+    assertThat(result, is(NEAR_INTERESTING));
   }
 
   @Test
@@ -140,7 +140,7 @@ public class CarMileageTest {
 
     int result = carMileage.isInteresting(799, awesomePhrases);
 
-    assertThat(result, is(nearInteresting));
+    assertThat(result, is(NEAR_INTERESTING));
   }
 
   @Test
@@ -150,7 +150,7 @@ public class CarMileageTest {
 
     int result = carMileage.isInteresting(798, awesomePhrases);
 
-    assertThat(result, is(nearInteresting));
+    assertThat(result, is(NEAR_INTERESTING));
   }
 
   @Test
@@ -160,7 +160,7 @@ public class CarMileageTest {
 
     int result = carMileage.isInteresting(109, awesomePhrases);
 
-    assertThat(result, is(nearInteresting));
+    assertThat(result, is(NEAR_INTERESTING));
   }
 
   @Test
@@ -170,7 +170,7 @@ public class CarMileageTest {
 
     int result = carMileage.isInteresting(110, awesomePhrases);
 
-    assertThat(result, is(nearInteresting));
+    assertThat(result, is(NEAR_INTERESTING));
   }
 
   @Test
@@ -180,7 +180,7 @@ public class CarMileageTest {
 
     int result = carMileage.isInteresting(1232, awesomePhrases);
 
-    assertThat(result, is(nearInteresting));
+    assertThat(result, is(NEAR_INTERESTING));
   }
 
   @Test
@@ -190,7 +190,7 @@ public class CarMileageTest {
 
     int result = carMileage.isInteresting(1233, awesomePhrases);
 
-    assertThat(result, is(nearInteresting));
+    assertThat(result, is(NEAR_INTERESTING));
   }
 
   @Test
@@ -200,7 +200,7 @@ public class CarMileageTest {
 
     int result = carMileage.isInteresting(4320, awesomePhrases);
 
-    assertThat(result, is(nearInteresting));
+    assertThat(result, is(NEAR_INTERESTING));
   }
 
   @Test
@@ -210,7 +210,7 @@ public class CarMileageTest {
 
     int result = carMileage.isInteresting(4319, awesomePhrases);
 
-    assertThat(result, is(nearInteresting));
+    assertThat(result, is(NEAR_INTERESTING));
   }
 
   @Test
@@ -220,7 +220,7 @@ public class CarMileageTest {
 
     int result = carMileage.isInteresting(120, awesomePhrases);
 
-    assertThat(result, is(nearInteresting));
+    assertThat(result, is(NEAR_INTERESTING));
   }
 
   @Test
@@ -230,6 +230,6 @@ public class CarMileageTest {
 
     int result = carMileage.isInteresting(119, awesomePhrases);
 
-    assertThat(result, is(nearInteresting));
+    assertThat(result, is(NEAR_INTERESTING));
   }
 }
