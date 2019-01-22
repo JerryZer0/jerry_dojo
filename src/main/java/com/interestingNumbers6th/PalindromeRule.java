@@ -1,6 +1,6 @@
 package com.interestingNumbers6th;
 
-public class PalindromeRule extends InterestingRule {
+class PalindromeRule extends InterestingRule {
 
   PalindromeRule(int number, int[] area) {
     super(number, area);

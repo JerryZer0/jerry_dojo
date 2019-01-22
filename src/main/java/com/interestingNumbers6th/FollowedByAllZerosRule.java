@@ -1,10 +1,10 @@
 package com.interestingNumbers6th;
 
-public class FollowedByAllZerosRule extends InterestingRule {
+class FollowedByAllZerosRule extends InterestingRule {
 
   private static char ZERO = '0';
 
-  public FollowedByAllZerosRule(int number, int[] area) {
+  FollowedByAllZerosRule(int number, int[] area) {
     super(number, area);
   }
 

@@ -1,6 +1,6 @@
 package com.interestingNumbers6th;
 
-public class InAwesomePhrasesRule extends InterestingRule {
+class InAwesomePhrasesRule extends InterestingRule {
 
   InAwesomePhrasesRule(int number, int[] area) {
     super(number, area);

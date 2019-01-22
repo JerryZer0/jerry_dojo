@@ -8,6 +8,11 @@ class CarMileage {
   private static int INTERESTING = 2;
   private static int NEAR_INTERESTING = 1;
   private static int BORING = 0;
+  private static int ORIGIN = 0;
+  private static int NEXT_ONE = 1;
+  private static int NEXT_TWO = 2;
+  private static int MIN_AREA = 100;
+
   private List<InterestingRule> rules = new ArrayList<>();
 
   private int mileage;
@@ -28,13 +33,13 @@ class CarMileage {
   }
 
   int isInteresting() {
-    if (mileage < 100) {
+    if (mileage < MIN_AREA) {
       return BORING;
     }
-    if (executeRules(0)) {
+    if (executeRules(ORIGIN)) {
       return INTERESTING;
     }
-    return (executeRules(1) || executeRules(2))?NEAR_INTERESTING:BORING;
+    return (executeRules(NEXT_ONE) || executeRules(NEXT_TWO))?NEAR_INTERESTING:BORING;
   }
 
   private boolean executeRules(int i) {

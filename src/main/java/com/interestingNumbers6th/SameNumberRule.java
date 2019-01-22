@@ -1,6 +1,6 @@
 package com.interestingNumbers6th;
 
-public class SameNumberRule extends InterestingRule {
+class SameNumberRule extends InterestingRule {
 
   SameNumberRule(int number, int[] area) {
     super(number, area);
