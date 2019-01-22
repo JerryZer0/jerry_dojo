@@ -57,7 +57,7 @@ class CarMileage {
     return BORING;
   }
 
-  private boolean isInAwesomePhrases(int mileage, int[] awesomePhrases) {
+  boolean isInAwesomePhrases(int mileage, int[] awesomePhrases) {
     for (int awesomePhrase : awesomePhrases) {
       if (mileage == awesomePhrase) {
         return true;
