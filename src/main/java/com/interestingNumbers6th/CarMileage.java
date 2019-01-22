@@ -1,37 +1,44 @@
 package com.interestingNumbers6th;
 
+import java.util.ArrayList;
+import java.util.List;
+
 class CarMileage {
 
   private static int INTERESTING = 2;
   private static int NEAR_INTERESTING = 1;
   private static int BORING = 0;
+  private List<InterestingRule> rules= new ArrayList<>();
 
-  int isInteresting(int mileage, int[] awesomePhrases) {
+  private int mileage;
+  private int awesomePhrases[];
+
+  public CarMileage(int mileage, int[] awesomePhrases) {
+    this.mileage = mileage;
+    this.awesomePhrases = awesomePhrases;
+    initRules();
+  }
+
+  private void initRules() {
+    rules.add(new DecrementingSequentialRule(mileage,awesomePhrases));
+    rules.add(new FollowedByAllZerosRule(mileage,awesomePhrases));
+    rules.add(new InAwesomePhrasesRule(mileage,awesomePhrases));
+    rules.add(new IncrementingSequentialRule(mileage,awesomePhrases));
+    rules.add(new PalindromeRule(mileage,awesomePhrases));
+    rules.add(new SameNumberRule(mileage,awesomePhrases));
+  }
+
+  int isInteresting() {
     if (mileage < 100) {
       return BORING;
     }
-    if (isInAwesomePhrases(mileage, awesomePhrases)) {
-      return INTERESTING;
-    }
-    char[] mileages = String.valueOf(mileage).toCharArray();
-    if (isFollowedByAllZeros(mileages)) {
-      return INTERESTING;
-    }
-    if (isSameNumber(mileages)) {
-      return INTERESTING;
-    }
-    if (isIncrementingSequential(mileages)) {
-      return INTERESTING;
-    }
-    if (isDecrementingSequential(mileages)) {
-      return INTERESTING;
-    }
-    if (isPalindrome(mileages)) {
-      return INTERESTING;
+    for(InterestingRule rule:rules){
+      if(rule.isInteresting()){
+        return INTERESTING;
+      }
     }
     return isNearInteresting(mileage, awesomePhrases);
   }
-
 
   private int isNearInteresting(int mileage, int[] awesomePhrases) {
     if (isInAwesomePhrases(mileage + 1, awesomePhrases) || isInAwesomePhrases(mileage + 2, awesomePhrases)) {
