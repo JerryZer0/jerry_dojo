@@ -1,6 +1,6 @@
 package com.interestingNumbers6th;
 
-public class IncrementingSequentialRule extends InterestingRule {
+class IncrementingSequentialRule extends InterestingRule {
 
   IncrementingSequentialRule(int number, int[] area) {
     super(number, area);

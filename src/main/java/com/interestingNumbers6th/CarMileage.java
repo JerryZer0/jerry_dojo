@@ -11,14 +11,14 @@ class CarMileage {
   private List<InterestingRule> rules = new ArrayList<>();
 
   private int mileage;
-  private int awesomePhrases[];
+  private int[] awesomePhrases;
 
   public CarMileage(int mileage, int[] awesomePhrases) {
     this.mileage = mileage;
     this.awesomePhrases = awesomePhrases;
   }
 
-  private void initRules(int mileage, int awesomePhrases[]) {
+  private void initRules(int mileage, int[] awesomePhrases) {
     rules.add(new DecrementingSequentialRule(mileage, awesomePhrases));
     rules.add(new FollowedByAllZerosRule(mileage, awesomePhrases));
     rules.add(new InAwesomePhrasesRule(mileage, awesomePhrases));
@@ -34,10 +34,7 @@ class CarMileage {
     if (executeRules(0)) {
       return INTERESTING;
     }
-    if (executeRules(1) || executeRules(2)){
-      return NEAR_INTERESTING;
-    }
-    return BORING;
+    return (executeRules(1) || executeRules(2))?NEAR_INTERESTING:BORING;
   }
 
   private boolean executeRules(int i) {
