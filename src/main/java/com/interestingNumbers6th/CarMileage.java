@@ -24,6 +24,7 @@ class CarMileage {
   }
 
   private void initRules(int mileage, int[] awesomePhrases) {
+    rules.clear();
     rules.add(new DecrementingSequentialRule(mileage, awesomePhrases));
     rules.add(new FollowedByAllZerosRule(mileage, awesomePhrases));
     rules.add(new InAwesomePhrasesRule(mileage, awesomePhrases));
@@ -50,5 +51,9 @@ class CarMileage {
       }
     }
     return false;
+  }
+
+  public void addRule(InterestingRule rule){
+    rules.add(rule);
   }
 }
