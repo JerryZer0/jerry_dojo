@@ -2,8 +2,8 @@ package com.interestingNumbers6th;
 
 class SameNumberRule extends InterestingRule {
 
-  SameNumberRule(int number, int[] area) {
-    super(number, area);
+  SameNumberRule(int number) {
+    super(number);
   }
 
   @Override

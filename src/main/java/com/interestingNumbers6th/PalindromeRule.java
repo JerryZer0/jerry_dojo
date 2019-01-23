@@ -2,8 +2,8 @@ package com.interestingNumbers6th;
 
 class PalindromeRule extends InterestingRule {
 
-  PalindromeRule(int number, int[] area) {
-    super(number, area);
+  PalindromeRule(int number) {
+    super(number);
   }
 
   @Override

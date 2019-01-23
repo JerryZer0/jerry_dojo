@@ -2,8 +2,8 @@ package com.interestingNumbers6th;
 
 class DecrementingSequentialRule extends InterestingRule {
 
-  DecrementingSequentialRule(int number, int[] area) {
-    super(number, area);
+  DecrementingSequentialRule(int number) {
+    super(number);
   }
 
   @Override

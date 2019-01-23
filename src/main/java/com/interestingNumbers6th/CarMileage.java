@@ -25,12 +25,12 @@ class CarMileage {
 
   private void initRules(int mileage, int[] awesomePhrases) {
     rules.clear();
-    rules.add(new DecrementingSequentialRule(mileage, awesomePhrases));
-    rules.add(new FollowedByAllZerosRule(mileage, awesomePhrases));
+    rules.add(new DecrementingSequentialRule(mileage));
+    rules.add(new FollowedByAllZerosRule(mileage));
     rules.add(new InAwesomePhrasesRule(mileage, awesomePhrases));
-    rules.add(new IncrementingSequentialRule(mileage, awesomePhrases));
-    rules.add(new PalindromeRule(mileage, awesomePhrases));
-    rules.add(new SameNumberRule(mileage, awesomePhrases));
+    rules.add(new IncrementingSequentialRule(mileage));
+    rules.add(new PalindromeRule(mileage));
+    rules.add(new SameNumberRule(mileage));
   }
 
   int isInteresting() {
@@ -40,7 +40,7 @@ class CarMileage {
     if (executeRules(ORIGIN)) {
       return INTERESTING;
     }
-    return (executeRules(NEXT_ONE) || executeRules(NEXT_TWO))?NEAR_INTERESTING:BORING;
+    return (executeRules(NEXT_ONE) || executeRules(NEXT_TWO)) ? NEAR_INTERESTING : BORING;
   }
 
   private boolean executeRules(int i) {
@@ -53,7 +53,7 @@ class CarMileage {
     return false;
   }
 
-  public void addRule(InterestingRule rule){
+  public void addRule(InterestingRule rule) {
     rules.add(rule);
   }
 }

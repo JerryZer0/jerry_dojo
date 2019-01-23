@@ -4,8 +4,8 @@ class FollowedByAllZerosRule extends InterestingRule {
 
   private static char ZERO = '0';
 
-  FollowedByAllZerosRule(int number, int[] area) {
-    super(number, area);
+  FollowedByAllZerosRule(int number) {
+    super(number);
   }
 
   @Override
