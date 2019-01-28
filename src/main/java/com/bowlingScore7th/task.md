@@ -54,3 +54,10 @@ given ten groups of scores with last group total score is 10
 when calculate the total score
 then return 101
 ```
+- task 9
+```text
+(10+0)+(8+2)+(7+2)*7+2+8+10
+given ten groups of scores with last group total score is 10
+when calculate the total score
+then return 120
+```
