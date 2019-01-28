@@ -9,7 +9,7 @@ import org.junit.Test;
 public class BowlingScoreTest {
 
   @Test
-  public void should_return_90_when_call_calculate_score_given_ten_groups_of_scores_with_no_total_score_bigger_than_10() {
+  public void should_return_90_when_call_calculate_score_given_ten_groups_of_scores_with_no_total_score_is_10() {
     List<BowlingGroup> bowlingList = initData();
     BowlingScore score = new BowlingScore(bowlingList);
 
@@ -30,7 +30,7 @@ public class BowlingScoreTest {
   }
 
   @Test
-  public void should_return_99_when_call_calculate_score_given_ten_groups_of_scores_with_first_group_total_score_bigger_than_10() {
+  public void should_return_99_when_call_calculate_score_given_ten_groups_of_scores_with_first_group_total_score_is_10() {
     List<BowlingGroup> bowlingList = initData();
     bowlingList.set(0, new BowlingGroup(8, 2));
     BowlingScore score = new BowlingScore(bowlingList);
@@ -41,7 +41,7 @@ public class BowlingScoreTest {
   }
 
   @Test
-  public void should_return_99_when_call_calculate_score_given_ten_groups_of_scores_with_second_group_total_score_bigger_than_10() {
+  public void should_return_99_when_call_calculate_score_given_ten_groups_of_scores_with_second_group_total_score_is_10() {
     List<BowlingGroup> bowlingList = initData();
     bowlingList.set(1, new BowlingGroup(8, 2));
     BowlingScore score = new BowlingScore(bowlingList);
@@ -52,7 +52,7 @@ public class BowlingScoreTest {
   }
 
   @Test
-  public void should_return_96_when_call_calculate_score_given_ten_groups_of_scores_with_last_group_total_score_bigger_than_10() {
+  public void should_return_96_when_call_calculate_score_given_ten_groups_of_scores_with_last_group_total_score_is_10() {
     List<BowlingGroup> bowlingList = initData();
     bowlingList.set(9, new BowlingGroup(8, 2));
     BowlingScore score = new BowlingScore(bowlingList);
@@ -64,7 +64,7 @@ public class BowlingScoreTest {
   }
 
   @Test
-  public void should_return_100_when_call_calculate_score_given_ten_groups_of_scores_with_first_group_has_10() {
+  public void should_return_100_when_call_calculate_score_given_ten_groups_of_scores_with_first_group_score_has_10() {
     List<BowlingGroup> bowlingList = initData();
     bowlingList.set(0, new BowlingGroup(10, 0));
     BowlingScore score = new BowlingScore(bowlingList);
@@ -75,7 +75,7 @@ public class BowlingScoreTest {
   }
 
   @Test
-  public void should_return_96_when_call_calculate_score_given_ten_groups_of_scores_with_last_group_has_10() {
+  public void should_return_96_when_call_calculate_score_given_ten_groups_of_scores_with_last_group_score_has_10() {
     List<BowlingGroup> bowlingList = initData();
     bowlingList.set(9, new BowlingGroup(10, 3));
     BowlingScore score = new BowlingScore(bowlingList);
@@ -84,6 +84,18 @@ public class BowlingScoreTest {
     int totalScore = score.calculate();
 
     assertEquals(96, totalScore);
+  }
+
+  @Test
+  public void should_return_101_when_call_calculate_score_given_ten_groups_of_scores_with_last_group_total_score_is_10() {
+    List<BowlingGroup> bowlingList = initData();
+    bowlingList.set(9, new BowlingGroup(2, 8));
+    BowlingScore score = new BowlingScore(bowlingList);
+    score.setExternalScore(10);
+
+    int totalScore = score.calculate();
+
+    assertEquals(101, totalScore);
   }
 
   private List<BowlingGroup> initData() {
