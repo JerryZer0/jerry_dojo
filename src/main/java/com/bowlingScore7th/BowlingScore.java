@@ -15,7 +15,7 @@ class BowlingScore {
     return externalScore;
   }
 
-  public void setExternalScore(int externalScore) {
+  void setExternalScore(int externalScore) {
     this.externalScore = externalScore;
   }
 
