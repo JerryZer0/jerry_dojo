@@ -16,7 +16,17 @@ public class BowlingScoreTest {
     int totalScore = score.calculate();
 
     assertEquals(90,totalScore);
+  }
 
+  @Test
+  public void should_return_99_when_call_calculate_score_given_ten_groups_of_scores_with_first_group_total_score_is_7(){
+    List<Bowling> bowlingList = initData();
+    bowlingList.set(0,new Bowling(5,2));
+    BowlingScore score = new BowlingScore(bowlingList);
+
+    int totalScore = score.calculate();
+
+    assertEquals(88,totalScore);
   }
 
   protected List<Bowling> initData(){
