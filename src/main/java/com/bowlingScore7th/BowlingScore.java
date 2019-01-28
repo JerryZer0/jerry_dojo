@@ -24,12 +24,12 @@ class BowlingScore {
     int spare = 0;
     for (int i = 0; i < 10; i++) {
       BowlingGroup bowlingGroup = bowlingList.get(i);
-      if (bowlingGroup.getGroupScore() == 10 && i<9){
+      if (bowlingGroup.getGroupScore() == 10 && i < 9) {
         spare += bowlingList.get(i + 1).getFirstScore();
       }
       totalScore += bowlingGroup.getGroupScore();
     }
-    totalScore += spare;
+    totalScore += spare + externalScore;
     return totalScore;
   }
 }
