@@ -1,17 +1,20 @@
 package com.bowlingScore7th;
 
-import java.util.ArrayList;
 import java.util.List;
 
-public class BowlingScore {
+class BowlingScore {
 
-  private List<Bowling> bowlingList = new ArrayList<>();
+  private List<BowlingGroup> bowlingList;
 
-  public BowlingScore(List<Bowling> bowlingList) {
+  BowlingScore(List<BowlingGroup> bowlingList) {
     this.bowlingList = bowlingList;
   }
 
-  public int calculate() {
-    return 90;
+  int calculate() {
+    int totalScore = 0;
+    for(BowlingGroup bowling:bowlingList){
+      totalScore+= bowling.getGroupScore();
+    }
+    return totalScore;
   }
 }
