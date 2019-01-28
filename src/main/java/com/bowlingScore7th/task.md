@@ -35,7 +35,7 @@ then return 96
 ```
 - task 6
 ```text
-10+(7+2)*9+9
+10+(7+2)*9
 given ten groups of scores with first group has 10
 when calculate the total score
 then return 100

@@ -29,6 +29,17 @@ public class BowlingScoreTest {
     assertEquals(88,totalScore);
   }
 
+  @Test
+  public void should_return_99_when_call_calculate_score_given_ten_groups_of_scores_with_first_group_total_score_bigger_than_10(){
+    List<BowlingGroup> bowlingList = initData();
+    bowlingList.set(0,new BowlingGroup(8,2));
+    BowlingScore score = new BowlingScore(bowlingList);
+
+    int totalScore = score.calculate();
+
+    assertEquals(99,totalScore);
+  }
+
   private List<BowlingGroup> initData(){
     List<BowlingGroup> bowlingList = new ArrayList<>();
     for (int i=0;i<10;i++){
