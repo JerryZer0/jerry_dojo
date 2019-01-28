@@ -63,6 +63,18 @@ public class BowlingScoreTest {
     assertEquals(96, totalScore);
   }
 
+
+  @Test
+  public void should_return_100_when_call_calculate_score_given_ten_groups_of_scores_with_first_group_has_10() {
+    List<BowlingGroup> bowlingList = initData();
+    bowlingList.set(0, new BowlingGroup(10, 0));
+    BowlingScore score = new BowlingScore(bowlingList);
+
+    int totalScore = score.calculate();
+
+    assertEquals(100, totalScore);
+  }
+
   private List<BowlingGroup> initData() {
     List<BowlingGroup> bowlingList = new ArrayList<>();
     for (int i = 0; i < 10; i++) {
