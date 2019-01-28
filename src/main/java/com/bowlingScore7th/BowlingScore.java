@@ -12,9 +12,15 @@ class BowlingScore {
 
   int calculate() {
     int totalScore = 0;
-    for(BowlingGroup bowling:bowlingList){
-      totalScore+= bowling.getGroupScore();
+    int spare = 0;
+    for (int i = 0; i < 10; i++) {
+      BowlingGroup bowlingGroup = bowlingList.get(i);
+      if (bowlingGroup.getGroupScore() == 10){
+        spare += bowlingList.get(i + 1).getFirstScore();
+      }
+      totalScore += bowlingGroup.getGroupScore();
     }
+    totalScore += spare;
     return totalScore;
   }
 }
