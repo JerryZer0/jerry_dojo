@@ -63,7 +63,6 @@ public class BowlingScoreTest {
     assertEquals(96, totalScore);
   }
 
-
   @Test
   public void should_return_100_when_call_calculate_score_given_ten_groups_of_scores_with_first_group_has_10() {
     List<BowlingGroup> bowlingList = initData();
@@ -73,6 +72,18 @@ public class BowlingScoreTest {
     int totalScore = score.calculate();
 
     assertEquals(100, totalScore);
+  }
+
+  @Test
+  public void should_return_96_when_call_calculate_score_given_ten_groups_of_scores_with_last_group_has_10() {
+    List<BowlingGroup> bowlingList = initData();
+    bowlingList.set(9, new BowlingGroup(10, 3));
+    BowlingScore score = new BowlingScore(bowlingList);
+    score.setExternalScore(2);
+
+    int totalScore = score.calculate();
+
+    assertEquals(96, totalScore);
   }
 
   private List<BowlingGroup> initData() {
