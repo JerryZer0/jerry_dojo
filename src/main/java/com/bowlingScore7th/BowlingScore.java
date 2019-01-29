@@ -6,19 +6,24 @@ import java.util.List;
 class BowlingScore {
 
   private List<BowlingGroup> bowlingList;
-  private List<Integer> externalScores = new ArrayList<>();
   private final int TOTAL_FRAMES = 10;
+  private final int MAX_SCORE = 10;
+  List<Integer> externalScores = new ArrayList<>();
 
   BowlingScore(List<BowlingGroup> bowlingList) {
     this.bowlingList = bowlingList;
   }
 
-  public List<Integer> getExternalScores() {
-    return externalScores;
+  BowlingScore(List<BowlingGroup> bowlingList, List<Integer> externalScores) {
+    this.bowlingList = bowlingList;
+    this.externalScores = externalScores;
   }
 
-  void setExternalScores(List<Integer> externalScores) {
-    this.externalScores = externalScores;
+  BowlingScore instance() {
+    if (bowlingList.get(TOTAL_FRAMES - 1).getGroupScore() == MAX_SCORE) {
+      return new ExternalBowlingScore(bowlingList, externalScores);
+    }
+    return this;
   }
 
   int calculate() {
@@ -26,21 +31,13 @@ class BowlingScore {
     for (int i = 0; i < TOTAL_FRAMES - 1; i++) {
       BowlingGroup bowlingGroup = bowlingList.get(i);
       totalScore += bowlingGroup.getGroupScore();
-      if (bowlingGroup.getFirstScore() == 10) {
+      if (bowlingGroup.getFirstScore() == MAX_SCORE) {
         totalScore += bowlingList.get(i + 1).getGroupScore();
-      } else if (bowlingGroup.getGroupScore() == 10) {
+      } else if (bowlingGroup.getGroupScore() == MAX_SCORE) {
         totalScore += bowlingList.get(i + 1).getFirstScore();
       }
     }
-    totalScore += bowlingList.get(TOTAL_FRAMES - 1).getGroupScore() + getTotalExternalScore();
+    totalScore += bowlingList.get(TOTAL_FRAMES - 1).getGroupScore();
     return totalScore;
-  }
-
-  private int getTotalExternalScore() {
-    int totalExternalScore = 0;
-    for (Integer score : externalScores) {
-      totalExternalScore += score;
-    }
-    return totalExternalScore;
   }
 }

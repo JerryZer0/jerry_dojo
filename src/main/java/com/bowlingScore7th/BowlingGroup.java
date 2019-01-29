@@ -1,6 +1,7 @@
 package com.bowlingScore7th;
 
 public class BowlingGroup {
+
   private int firstScore;
   private int secondScore;
 
@@ -25,7 +26,7 @@ public class BowlingGroup {
     this.secondScore = secondScore;
   }
 
-  public int getGroupScore(){
-    return firstScore+secondScore;
+  public int getGroupScore() {
+    return firstScore + secondScore;
   }
 }

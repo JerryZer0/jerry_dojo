@@ -12,7 +12,7 @@ public class BowlingScoreTest {
   @Test
   public void should_return_90_when_call_calculate_score_given_ten_groups_of_scores_with_no_total_score_is_10() {
     List<BowlingGroup> bowlingList = initData();
-    BowlingScore score = new BowlingScore(bowlingList);
+    BowlingScore score = new BowlingScore(bowlingList).instance();
 
     int totalScore = score.calculate();
 
@@ -23,7 +23,7 @@ public class BowlingScoreTest {
   public void should_return_88_when_call_calculate_score_given_ten_groups_of_scores_with_first_group_total_score_is_7() {
     List<BowlingGroup> bowlingList = initData();
     bowlingList.set(0, new BowlingGroup(5, 2));
-    BowlingScore score = new BowlingScore(bowlingList);
+    BowlingScore score = new BowlingScore(bowlingList).instance();
 
     int totalScore = score.calculate();
 
@@ -34,7 +34,7 @@ public class BowlingScoreTest {
   public void should_return_98_when_call_calculate_score_given_ten_groups_of_scores_with_first_group_total_score_is_10() {
     List<BowlingGroup> bowlingList = initData();
     bowlingList.set(0, new BowlingGroup(8, 2));
-    BowlingScore score = new BowlingScore(bowlingList);
+    BowlingScore score = new BowlingScore(bowlingList).instance();
 
     int totalScore = score.calculate();
 
@@ -45,7 +45,7 @@ public class BowlingScoreTest {
   public void should_return_98_when_call_calculate_score_given_ten_groups_of_scores_with_second_group_total_score_is_10() {
     List<BowlingGroup> bowlingList = initData();
     bowlingList.set(1, new BowlingGroup(8, 2));
-    BowlingScore score = new BowlingScore(bowlingList);
+    BowlingScore score = new BowlingScore(bowlingList).instance();
 
     int totalScore = score.calculate();
 
@@ -56,8 +56,7 @@ public class BowlingScoreTest {
   public void should_return_96_when_call_calculate_score_given_ten_groups_of_scores_with_last_group_total_score_is_10() {
     List<BowlingGroup> bowlingList = initData();
     bowlingList.set(9, new BowlingGroup(8, 2));
-    BowlingScore score = new BowlingScore(bowlingList);
-    score.setExternalScores(Arrays.asList(5));
+    BowlingScore score = new BowlingScore(bowlingList, Arrays.asList(5)).instance();
 
     int totalScore = score.calculate();
 
@@ -68,7 +67,7 @@ public class BowlingScoreTest {
   public void should_return_100_when_call_calculate_score_given_ten_groups_of_scores_with_first_group_score_has_10() {
     List<BowlingGroup> bowlingList = initData();
     bowlingList.set(0, new BowlingGroup(10, 0));
-    BowlingScore score = new BowlingScore(bowlingList);
+    BowlingScore score = new BowlingScore(bowlingList).instance();
 
     int totalScore = score.calculate();
 
@@ -79,11 +78,10 @@ public class BowlingScoreTest {
   public void should_return_96_when_call_calculate_score_given_ten_groups_of_scores_with_last_group_score_has_10() {
     List<BowlingGroup> bowlingList = initData();
     bowlingList.set(9, new BowlingGroup(10, 0));
-    BowlingScore score = new BowlingScore(bowlingList);
     List<Integer> externalScores = new ArrayList<>();
     externalScores.add(3);
     externalScores.add(2);
-    score.setExternalScores(externalScores);
+    BowlingScore score = new BowlingScore(bowlingList, externalScores).instance();
 
     int totalScore = score.calculate();
 
@@ -94,8 +92,7 @@ public class BowlingScoreTest {
   public void should_return_101_when_call_calculate_score_given_ten_groups_of_scores_with_last_group_total_score_is_10() {
     List<BowlingGroup> bowlingList = initData();
     bowlingList.set(9, new BowlingGroup(2, 8));
-    BowlingScore score = new BowlingScore(bowlingList);
-    score.setExternalScores(Arrays.asList(10));
+    BowlingScore score = new BowlingScore(bowlingList, Arrays.asList(10)).instance();
 
     int totalScore = score.calculate();
 
@@ -108,8 +105,7 @@ public class BowlingScoreTest {
     bowlingList.set(0, new BowlingGroup(10, 0));
     bowlingList.set(1, new BowlingGroup(8, 2));
     bowlingList.set(9, new BowlingGroup(2, 8));
-    BowlingScore score = new BowlingScore(bowlingList);
-    score.setExternalScores(Arrays.asList(10));
+    BowlingScore score = new BowlingScore(bowlingList, Arrays.asList(10)).instance();
 
     int totalScore = score.calculate();
 
