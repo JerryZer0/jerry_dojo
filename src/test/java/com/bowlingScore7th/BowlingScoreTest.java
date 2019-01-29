@@ -19,7 +19,7 @@ public class BowlingScoreTest {
   }
 
   @Test
-  public void should_return_99_when_call_calculate_score_given_ten_groups_of_scores_with_first_group_total_score_is_7() {
+  public void should_return_88_when_call_calculate_score_given_ten_groups_of_scores_with_first_group_total_score_is_7() {
     List<BowlingGroup> bowlingList = initData();
     bowlingList.set(0, new BowlingGroup(5, 2));
     BowlingScore score = new BowlingScore(bowlingList);
