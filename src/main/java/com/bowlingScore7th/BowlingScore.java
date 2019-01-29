@@ -26,8 +26,8 @@ class BowlingScore {
     for (int i = 0; i < totalFrames - 1; i++) {
       BowlingGroup bowlingGroup = bowlingList.get(i);
       totalScore += bowlingGroup.getGroupScore();
-      if (bowlingGroup.getGroupScore() == 10) {
-        if (bowlingGroup.getFirstScore() == 10) {
+      if (isSpareOrStrike(bowlingGroup.getGroupScore())) {
+        if (isStrike(bowlingGroup.getFirstScore())) {
           totalScore += bowlingList.get(i + 1).getGroupScore();
         } else {
           totalScore += bowlingList.get(i + 1).getFirstScore();
@@ -36,5 +36,13 @@ class BowlingScore {
     }
     totalScore += bowlingList.get(totalFrames - 1).getGroupScore() + externalScore;
     return totalScore;
+  }
+
+  private boolean isStrike(int firstScore) {
+    return firstScore == 10;
+  }
+
+  private boolean isSpareOrStrike(int groupScore) {
+    return groupScore == 10;
   }
 }

@@ -2,11 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="f702ed50-3c80-4224-a68f-9e60675070f0" name="Default Changelist" comment="add rule interface&#10;add in awesome phrases rules">
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/bowlingScore7th/BowlingScore.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/bowlingScore7th/topic.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/com/bowlingScore7th/BowlingScoreTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/3/c/3cb11217c064b9f3ddae287f941a154a228c1b80" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/bowlingScore7th/task.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/6/e/6ef58dab1acce85beaacc1e38c7810305d9fe293" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/6/e/6ef58dab1acce85beaacc1e38c7810305d9fe293" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/bowlingScore7th/BowlingScore.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/bowlingScore7th/BowlingScore.java" afterDir="false" />
     </list>
     <list id="14de417e-dcfb-48c3-be4d-742377991cd1" name="ignore" comment="">
       <change beforePath="$PROJECT_DIR$/.gradle/4.8/fileHashes/fileHashes.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/4.8/fileHashes/fileHashes.bin" afterDir="false" />
@@ -15,6 +13,7 @@
       <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/c/c/cc352468e0201587e134893b3810537722921140" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/c/c/cc352468e0201587e134893b3810537722921140" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/index.pb" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/index.pb" afterDir="false" />
     </list>
+    <list id="0175080d-7908-4135-ba7e-0ed306fa2a21" name="Revert &quot;refactor&quot;" comment="Revert &quot;refactor&quot;&#10;&#10;This reverts commit 5c66139" />
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/.gradle/" />
     <ignored path="$PROJECT_DIR$/build/" />
@@ -115,17 +114,76 @@
       </usages-collector>
       <usages-collector id="statistics.spring.boot.run.usages" />
     </session>
+    <session id="1201325442">
+      <usages-collector id="statistics.file.extensions.open">
+        <counts>
+          <entry key="java" value="4" />
+          <entry key="md" value="2" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.file.types.open">
+        <counts>
+          <entry key="JAVA" value="4" />
+          <entry key="Markdown" value="2" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.file.extensions.edit">
+        <counts>
+          <entry key="java" value="109" />
+          <entry key="md" value="19" />
+          <entry key="txt" value="116" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.file.types.edit">
+        <counts>
+          <entry key="JAVA" value="109" />
+          <entry key="Markdown" value="19" />
+          <entry key="PLAIN_TEXT" value="116" />
+        </counts>
+      </usages-collector>
+    </session>
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/bowlingScore7th/task.md">
-          <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-            <state split_layout="SPLIT">
-              <first_editor relative-caret-position="387">
-                <caret line="45" column="57" selection-start-line="45" selection-start-column="57" selection-end-line="45" selection-end-column="57" />
-              </first_editor>
-              <second_editor />
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/lineWrap/LineWrap.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="238">
+              <caret line="14" column="49" selection-start-line="14" selection-start-column="49" selection-end-line="14" selection-end-column="49" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/bowlingScore7th/BowlingGroup.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="34">
+              <caret line="2" column="13" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
+              <folding>
+                <element signature="e#566#567#0" expanded="true" />
+                <element signature="e#605#606#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/test/java/com/bowlingScore7th/BowlingScoreTest.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="867">
+              <caret line="51" column="3" lean-forward="true" selection-start-line="51" selection-start-column="3" selection-end-line="51" selection-end-column="3" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="jar://C:/Program Files/Java/jdk1.8.0_171/src.zip!/java/util/List.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="208">
+              <caret line="563" column="6" selection-start-line="563" selection-start-column="6" selection-end-line="563" selection-end-column="6" />
             </state>
           </provider>
         </entry>
@@ -134,8 +192,39 @@
         <entry file="file://$PROJECT_DIR$/src/main/java/com/bowlingScore7th/topic.md">
           <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
             <state split_layout="FIRST">
-              <first_editor relative-caret-position="240">
-                <caret line="10" column="23" selection-start-line="10" selection-start-column="23" selection-end-line="10" selection-end-column="23" />
+              <first_editor relative-caret-position="102">
+                <caret line="6" column="35" selection-start-line="6" selection-start-column="33" selection-end-line="6" selection-end-column="35" />
+              </first_editor>
+              <second_editor />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/bowlingScore7th/BowlingScore.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="472">
+              <caret line="40" column="41" selection-start-line="40" selection-start-column="31" selection-end-line="40" selection-end-column="41" />
+              <folding>
+                <element signature="e#302#303#0" expanded="true" />
+                <element signature="e#332#333#0" expanded="true" />
+                <element signature="e#378#379#0" expanded="true" />
+                <element signature="e#422#423#0" expanded="true" />
+                <element signature="e#1091#1092#0" expanded="true" />
+                <element signature="e#1124#1125#0" expanded="true" />
+                <element signature="e#1105#1106#0" expanded="true" />
+                <element signature="e#1138#1139#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/bowlingScore7th/task.md">
+          <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+            <state split_layout="SPLIT">
+              <first_editor relative-caret-position="459">
+                <caret line="60" column="13" selection-start-line="60" selection-start-column="13" selection-end-line="60" selection-end-column="13" />
               </first_editor>
               <second_editor />
             </state>
@@ -143,19 +232,10 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/bowlingScore7th/BowlingScore.java">
+        <entry file="file://$PROJECT_DIR$/src/test/java/com/lineWrap/LineWrapTest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="44">
-              <caret line="2" column="25" selection-start-line="2" selection-start-column="25" selection-end-line="2" selection-end-column="25" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/test/java/com/bowlingScore7th/BowlingScoreTest.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="242">
-              <caret line="11" selection-start-line="11" selection-end-line="11" />
+            <state relative-caret-position="663">
+              <caret line="41" column="3" selection-start-line="41" selection-start-column="3" selection-end-line="41" selection-end-column="3" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -200,7 +280,7 @@
   <component name="GradleLocalSettings">
     <option name="myGradleHomes">
       <map>
-        <entry key="$PROJECT_DIR$" value="C:\Users\ZHANGJE11\.gradle\wrapper\dists\gradle-4.8-bin\divx0s2uj4thofgytb7gf9fsi\gradle-4.8" />
+        <entry key="$PROJECT_DIR$" value="C:\Users\ZHONGLE2\.gradle\wrapper\dists\gradle-4.8-bin\divx0s2uj4thofgytb7gf9fsi\gradle-4.8" />
       </map>
     </option>
     <option name="myGradleVersions">
@@ -375,8 +455,8 @@
     </option>
     <option name="modificationStamps">
       <map>
-        <entry key="$USER_HOME$/.gradle/gradle.properties" value="1465118388" />
-        <entry key="$PROJECT_DIR$" value="7703709129261" />
+        <entry key="$USER_HOME$/.gradle/gradle.properties" value="2725651917" />
+        <entry key="$PROJECT_DIR$" value="7734476207716" />
         <entry key="$PROJECT_DIR$/.gradle" value="0" />
         <entry key="$PROJECT_DIR$/build.gradle" value="964586255" />
         <entry key="$PROJECT_DIR$/gradle/wrapper/gradle-wrapper.properties" value="2007532874" />
@@ -540,9 +620,10 @@
         <option value="$PROJECT_DIR$/src/main/java/com/interestingNumbers6th/SameNumberRule.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/interestingNumbers6th/InterestingRule.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/interestingNumbers6th/CarMileage.java" />
-        <option value="$PROJECT_DIR$/src/test/java/com/bowlingScore7th/BowlingScoreTest.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/bowlingScore7th/topic.md" />
         <option value="$PROJECT_DIR$/src/main/java/com/bowlingScore7th/task.md" />
+        <option value="$PROJECT_DIR$/src/test/java/com/bowlingScore7th/BowlingScoreTest.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/bowlingScore7th/BowlingScore.java" />
       </list>
     </option>
   </component>
@@ -558,11 +639,10 @@
       <select />
     </treeState>
   </component>
-  <component name="ProjectFrameBounds">
-    <option name="x" value="-8" />
-    <option name="y" value="2" />
-    <option name="width" value="1920" />
-    <option name="height" value="1040" />
+  <component name="ProjectFrameBounds" extendedState="6">
+    <option name="x" value="-7" />
+    <option name="width" value="974" />
+    <option name="height" value="1047" />
   </component>
   <component name="ProjectInspectionProfilesVisibleTreeState">
     <entry key="Project Default">
@@ -590,7 +670,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
       <pane id="AndroidView" />
       <pane id="PackagesPane" />
       <pane id="ProjectPane">
@@ -598,29 +677,29 @@
           <expand>
             <path>
               <item name="SHP_TDD" type="b2602c69:ProjectViewProjectNode" />
-              <item name="SHP_TDD" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="jerry_dojo" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
             </path>
             <path>
               <item name="SHP_TDD" type="b2602c69:ProjectViewProjectNode" />
-              <item name="SHP_TDD" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="jerry_dojo" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="SHP_TDD" type="b2602c69:ProjectViewProjectNode" />
-              <item name="SHP_TDD" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="jerry_dojo" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
             </path>
             <path>
               <item name="SHP_TDD" type="b2602c69:ProjectViewProjectNode" />
-              <item name="SHP_TDD" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="jerry_dojo" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="SHP_TDD" type="b2602c69:ProjectViewProjectNode" />
-              <item name="SHP_TDD" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="jerry_dojo" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
@@ -628,7 +707,7 @@
             </path>
             <path>
               <item name="SHP_TDD" type="b2602c69:ProjectViewProjectNode" />
-              <item name="SHP_TDD" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="jerry_dojo" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
@@ -637,83 +716,48 @@
             </path>
             <path>
               <item name="SHP_TDD" type="b2602c69:ProjectViewProjectNode" />
-              <item name="SHP_TDD" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="jerry_dojo" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="test" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
             </path>
             <path>
               <item name="SHP_TDD" type="b2602c69:ProjectViewProjectNode" />
-              <item name="SHP_TDD" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="test" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="SHP_TDD" type="b2602c69:ProjectViewProjectNode" />
-              <item name="SHP_TDD" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="jerry_dojo" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="test" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="com" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="SHP_TDD" type="b2602c69:ProjectViewProjectNode" />
-              <item name="SHP_TDD" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="jerry_dojo" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="test" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
               <item name="com" type="462c0819:PsiDirectoryNode" />
-              <item name="bookshop5th" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="SHP_TDD" type="b2602c69:ProjectViewProjectNode" />
-              <item name="SHP_TDD" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="jerry_dojo" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="test" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="com" type="462c0819:PsiDirectoryNode" />
+              <item name="bowlingScore7th" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="SHP_TDD" type="b2602c69:ProjectViewProjectNode" />
+              <item name="jerry_dojo" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="test" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
               <item name="com" type="462c0819:PsiDirectoryNode" />
               <item name="calculatePrice" type="462c0819:PsiDirectoryNode" />
             </path>
-            <path>
-              <item name="SHP_TDD" type="b2602c69:ProjectViewProjectNode" />
-              <item name="SHP_TDD" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="test" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="com" type="462c0819:PsiDirectoryNode" />
-              <item name="interestingNumbers6th" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="SHP_TDD" type="b2602c69:ProjectViewProjectNode" />
-              <item name="SHP_TDD" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="test" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="com" type="462c0819:PsiDirectoryNode" />
-              <item name="leapYear" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="SHP_TDD" type="b2602c69:ProjectViewProjectNode" />
-              <item name="SHP_TDD" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="test" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="com" type="462c0819:PsiDirectoryNode" />
-              <item name="lineWrap" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="SHP_TDD" type="b2602c69:ProjectViewProjectNode" />
-              <item name="SHP_TDD" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="test" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="com" type="462c0819:PsiDirectoryNode" />
-              <item name="similarString" type="462c0819:PsiDirectoryNode" />
-            </path>
           </expand>
           <select />
         </subPane>
       </pane>
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -721,7 +765,7 @@
     <property name="SONARLINT_PRECOMMIT_ANALYSIS" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1548684071936" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1548754972072" />
     <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary" value="JUnit4" />
     <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit4" value="" />
     <property name="extract.method.default.visibility" value="private" />
@@ -765,23 +809,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="JUnit.CarMileageTest">
-    <configuration name="BooksManagerTest.should_return_32_when_call_calculate_given_4_books" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="SHP_TDD_test" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.bookshop5th.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="com.bookshop5th" />
-      <option name="MAIN_CLASS_NAME" value="com.bookshop5th.BooksManagerTest" />
-      <option name="METHOD_NAME" value="should_return_32_when_call_calculate_given_4_books" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
+  <component name="RunManager" selected="JUnit.BowlingScoreTest">
     <configuration name="BooksManagerTest.should_return_result_after_discount_when_call_calculate_given_4_books" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="SHP_TDD_test" />
       <extension name="coverage">
@@ -794,6 +822,20 @@
       <option name="MAIN_CLASS_NAME" value="com.bookshop5th.BooksManagerTest" />
       <option name="METHOD_NAME" value="should_return_result_after_discount_when_call_calculate_given_4_books" />
       <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="BowlingScoreTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="SHP_TDD_test" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.bowlingScore7th.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.bowlingScore7th" />
+      <option name="MAIN_CLASS_NAME" value="com.bowlingScore7th.BowlingScoreTest" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -844,18 +886,18 @@
     </configuration>
     <list>
       <item itemvalue="JUnit.CarMileageTest" />
-      <item itemvalue="JUnit.BooksManagerTest.should_return_32_when_call_calculate_given_4_books" />
       <item itemvalue="JUnit.BooksManagerTest.should_return_result_after_discount_when_call_calculate_given_4_books" />
       <item itemvalue="JUnit.CalculatePriceTest" />
       <item itemvalue="JUnit.CalculatePriceTest.should_return_ticket_info_with_discount_10_when_call_printTicket_given_two_kinds_good_with_total_price_more_than_10000_in_UT" />
+      <item itemvalue="JUnit.BowlingScoreTest" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.BowlingScoreTest" />
         <item itemvalue="JUnit.CarMileageTest" />
         <item itemvalue="JUnit.CalculatePriceTest.should_return_ticket_info_with_discount_10_when_call_printTicket_given_two_kinds_good_with_total_price_more_than_10000_in_UT" />
         <item itemvalue="JUnit.CalculatePriceTest" />
         <item itemvalue="JUnit.BooksManagerTest.should_return_result_after_discount_when_call_calculate_given_4_books" />
-        <item itemvalue="JUnit.BooksManagerTest.should_return_32_when_call_calculate_given_4_books" />
       </list>
     </recent_temporary>
   </component>
@@ -889,41 +931,6 @@
       <workItem from="1548205156502" duration="8808000" />
       <workItem from="1548481267565" duration="2017000" />
       <workItem from="1548682371852" duration="1597000" />
-    </task>
-    <task id="LOCAL-00009" summary="modify first test case">
-      <created>1546858647639</created>
-      <option name="number" value="00009" />
-      <option name="presentableId" value="LOCAL-00009" />
-      <option name="project" value="LOCAL" />
-      <updated>1546858647639</updated>
-    </task>
-    <task id="LOCAL-00010" summary="modify first test case">
-      <created>1546858712320</created>
-      <option name="number" value="00010" />
-      <option name="presentableId" value="LOCAL-00010" />
-      <option name="project" value="LOCAL" />
-      <updated>1546858712320</updated>
-    </task>
-    <task id="LOCAL-00011" summary="the first test case passed">
-      <created>1546860122103</created>
-      <option name="number" value="00011" />
-      <option name="presentableId" value="LOCAL-00011" />
-      <option name="project" value="LOCAL" />
-      <updated>1546860122103</updated>
-    </task>
-    <task id="LOCAL-00012" summary="the second test case did not pass">
-      <created>1546860695645</created>
-      <option name="number" value="00012" />
-      <option name="presentableId" value="LOCAL-00012" />
-      <option name="project" value="LOCAL" />
-      <updated>1546860695645</updated>
-    </task>
-    <task id="LOCAL-00013" summary="format first test case">
-      <created>1546861504802</created>
-      <option name="number" value="00013" />
-      <option name="presentableId" value="LOCAL-00013" />
-      <option name="project" value="LOCAL" />
-      <updated>1546861504802</updated>
     </task>
     <task id="LOCAL-00014" summary="the second test case passed">
       <created>1546861900950</created>
@@ -1233,43 +1240,78 @@
       <option name="project" value="LOCAL" />
       <updated>1548225319694</updated>
     </task>
-    <option name="localTasksCounter" value="58" />
+    <task id="LOCAL-00058" summary="modify description error and test name">
+      <created>1548751085490</created>
+      <option name="number" value="00058" />
+      <option name="presentableId" value="LOCAL-00058" />
+      <option name="project" value="LOCAL" />
+      <updated>1548751085491</updated>
+    </task>
+    <task id="LOCAL-00059" summary="modify test name">
+      <created>1548751775922</created>
+      <option name="number" value="00059" />
+      <option name="presentableId" value="LOCAL-00059" />
+      <option name="project" value="LOCAL" />
+      <updated>1548751775922</updated>
+    </task>
+    <task id="LOCAL-00060" summary="optimized computing structure">
+      <created>1548753622772</created>
+      <option name="number" value="00060" />
+      <option name="presentableId" value="LOCAL-00060" />
+      <option name="project" value="LOCAL" />
+      <updated>1548753622772</updated>
+    </task>
+    <task id="LOCAL-00061" summary="refactor">
+      <created>1548754067534</created>
+      <option name="number" value="00061" />
+      <option name="presentableId" value="LOCAL-00061" />
+      <option name="project" value="LOCAL" />
+      <updated>1548754067534</updated>
+    </task>
+    <task id="LOCAL-00062" summary="modify name error">
+      <created>1548754322579</created>
+      <option name="number" value="00062" />
+      <option name="presentableId" value="LOCAL-00062" />
+      <option name="project" value="LOCAL" />
+      <updated>1548754322579</updated>
+    </task>
+    <option name="localTasksCounter" value="63" />
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="CarMileageTest - 2019.01.22 at 22h 50m 12s.xml">
-      <configuration name="CarMileageTest" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="CarMileageTest - 2019.01.22 at 22h 50m 36s.xml">
-      <configuration name="CarMileageTest" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="CarMileageTest - 2019.01.22 at 23h 05m 27s.xml">
-      <configuration name="CarMileageTest" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="CarMileageTest - 2019.01.23 at 09h 03m 49s.xml">
-      <configuration name="CarMileageTest" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="CarMileageTest_should_return_interesting_when_execute_is_interesting_given_num_7890_and_empty_array - 2019.01.23 at 13h 44m 12s.xml">
-      <configuration name="CarMileageTest.should_return_interesting_when_execute_is_interesting_given_num_7890_and_empty_array" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="CarMileageTest - 2019.01.23 at 14h 25m 51s.xml">
-      <configuration name="CarMileageTest" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="CarMileageTest - 2019.01.23 at 14h 27m 38s.xml">
-      <configuration name="CarMileageTest" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="CarMileageTest_should_return_interesting_when_execute_is_interesting_given_num_100_and_empty_array - 2019.01.23 at 14h 33m 12s.xml">
-      <configuration name="CarMileageTest.should_return_interesting_when_execute_is_interesting_given_num_100_and_empty_array" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="CarMileageTest_should_return_interesting_when_execute_is_interesting_given_num_100_and_empty_array - 2019.01.23 at 14h 33m 51s.xml">
-      <configuration name="CarMileageTest.should_return_interesting_when_execute_is_interesting_given_num_100_and_empty_array" configurationId="JUnit" />
-    </history-entry>
     <history-entry file="CarMileageTest - 2019.01.23 at 14h 34m 22s.xml">
       <configuration name="CarMileageTest" configurationId="JUnit" />
     </history-entry>
+    <history-entry file="BowlingScoreTest - 2019.01.29 at 16h 27m 12s.xml">
+      <configuration name="BowlingScoreTest" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="BowlingScoreTest - 2019.01.29 at 16h 54m 38s.xml">
+      <configuration name="BowlingScoreTest" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="BowlingScoreTest - 2019.01.29 at 17h 09m 57s.xml">
+      <configuration name="BowlingScoreTest" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="BowlingScoreTest - 2019.01.29 at 17h 10m 12s.xml">
+      <configuration name="BowlingScoreTest" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="BowlingScoreTest - 2019.01.29 at 17h 14m 05s.xml">
+      <configuration name="BowlingScoreTest" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="BowlingScoreTest - 2019.01.29 at 17h 17m 53s.xml">
+      <configuration name="BowlingScoreTest" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="BowlingScoreTest - 2019.01.29 at 17h 18m 45s.xml">
+      <configuration name="BowlingScoreTest" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="BowlingScoreTest - 2019.01.29 at 17h 19m 38s.xml">
+      <configuration name="BowlingScoreTest" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="BowlingScoreTest - 2019.01.29 at 17h 25m 00s.xml">
+      <configuration name="BowlingScoreTest" configurationId="JUnit" />
+    </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="135507000" />
+    <option name="totallyTimeSpent" value="139983000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -1281,7 +1323,7 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="2" width="1920" height="1040" extended-state="0" />
+    <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
     <editor active="true" />
     <layout>
       <window_info id="Image Layers" order="0" />
@@ -1289,17 +1331,17 @@
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info id="Capture Tool" order="3" />
       <window_info id="Designer" order="4" />
-      <window_info active="true" content_ui="combo" id="Project" order="5" visible="true" weight="0.25053763" />
+      <window_info active="true" content_ui="combo" id="Project" order="5" visible="true" weight="0.32462686" />
       <window_info id="Structure" order="6" side_tool="true" weight="0.25" />
-      <window_info anchor="bottom" id="Terminal" order="0" />
+      <window_info anchor="bottom" id="Terminal" order="0" weight="0.32936078" />
       <window_info anchor="bottom" id="Event Log" order="1" side_tool="true" />
       <window_info anchor="bottom" id="Database Changes" order="2" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Messages" order="3" />
-      <window_info anchor="bottom" id="Version Control" order="4" visible="true" weight="0.30316743" />
+      <window_info anchor="bottom" id="Messages" order="3" weight="0.32936078" />
+      <window_info anchor="bottom" id="Version Control" order="4" visible="true" weight="0.24918744" />
       <window_info anchor="bottom" id="Build" order="5" weight="0.32936078" />
       <window_info anchor="bottom" id="Message" order="6" />
       <window_info anchor="bottom" id="Find" order="7" />
-      <window_info anchor="bottom" id="Run" order="8" weight="0.5322222" />
+      <window_info anchor="bottom" id="Run" order="8" weight="0.25893825" />
       <window_info anchor="bottom" id="Debug" order="9" weight="0.34" />
       <window_info anchor="bottom" id="Cvs" order="10" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="11" weight="0.4" />
@@ -1345,8 +1387,8 @@
               <option name="COLUMN_ORDER">
                 <list>
                   <option value="0" />
-                  <option value="1" />
                   <option value="2" />
+                  <option value="1" />
                   <option value="3" />
                 </list>
               </option>
@@ -1360,10 +1402,6 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="add first test case" />
-    <MESSAGE value="pass the first test case" />
-    <MESSAGE value="add the second test case" />
-    <MESSAGE value="pass the second test case" />
     <MESSAGE value="add the third test case" />
     <MESSAGE value="pass the third test case&#10;refactor" />
     <MESSAGE value="add the forth test case" />
@@ -1380,31 +1418,18 @@
     <MESSAGE value="add rule interface&#10;add in awesome phrases rules" />
     <MESSAGE value="add rules" />
     <MESSAGE value="add rules in list&#10;refactor with the rules" />
-    <MESSAGE value="refactor" />
     <MESSAGE value="remove redundant test case" />
     <MESSAGE value="remove code smell" />
     <MESSAGE value="add addRule to outside" />
     <MESSAGE value="refactor about redundant parameter" />
-    <option name="LAST_COMMIT_MESSAGE" value="refactor about redundant parameter" />
+    <MESSAGE value="modify description error and test name" />
+    <MESSAGE value="modify test name" />
+    <MESSAGE value="optimized computing structure" />
+    <MESSAGE value="refactor" />
+    <MESSAGE value="modify name error" />
+    <option name="LAST_COMMIT_MESSAGE" value="modify name error" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/lineWrap/task.md">
-      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-        <state split_layout="SPLIT">
-          <first_editor relative-caret-position="550">
-            <caret line="25" column="5" selection-start-line="25" selection-start-column="5" selection-end-line="25" selection-end-column="13" />
-          </first_editor>
-          <second_editor />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/leapYear/LeapYear.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="220">
-          <caret line="14" selection-start-line="14" selection-end-line="14" />
-        </state>
-      </provider>
-    </entry>
     <entry file="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/junit/junit/4.12/a6c32b40bf3d76eca54e3c601e5d1470c86fcdfa/junit-4.12-sources.jar!/org/junit/runners/BlockJUnit4ClassRunner.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="171">
@@ -1460,8 +1485,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/lineWrap/LineWrap.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="79">
-          <caret line="11" column="3" lean-forward="true" selection-start-line="11" selection-start-column="3" selection-end-line="11" selection-end-column="3" />
+        <state relative-caret-position="238">
+          <caret line="14" column="49" selection-start-line="14" selection-start-column="49" selection-end-line="14" selection-end-column="49" />
         </state>
       </provider>
     </entry>
@@ -1471,8 +1496,11 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/com/lineWrap/LineWrapTest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-16">
-          <caret line="27" column="32" selection-start-line="27" selection-start-column="32" selection-end-line="27" selection-end-column="32" />
+        <state relative-caret-position="663">
+          <caret line="41" column="3" selection-start-line="41" selection-start-column="3" selection-end-line="41" selection-end-column="3" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -1504,20 +1532,8 @@
         </state>
       </provider>
     </entry>
-    <entry file="jar://C:/Java/jdk1.8.0_171/src.zip!/java/util/Optional.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="222">
-          <caret line="106" column="34" selection-start-line="106" selection-start-column="34" selection-end-line="106" selection-end-column="34" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://C:/Java/jdk1.8.0_171/src.zip!/java/util/List.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="198">
-          <caret line="563" column="6" selection-start-line="563" selection-start-column="6" selection-end-line="563" selection-end-column="6" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="jar://C:/Java/jdk1.8.0_171/src.zip!/java/util/Optional.java" />
+    <entry file="jar://C:/Java/jdk1.8.0_171/src.zip!/java/util/List.java" />
     <entry file="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/junit/junit/4.12/a6c32b40bf3d76eca54e3c601e5d1470c86fcdfa/junit-4.12-sources.jar!/org/junit/runners/model/FrameworkMethod.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="476">
@@ -1525,13 +1541,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="jar://C:/Java/jdk1.8.0_171/src.zip!/java/util/Map.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="231">
-          <caret line="211" column="6" selection-start-line="211" selection-start-column="6" selection-end-line="211" selection-end-column="6" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="jar://C:/Java/jdk1.8.0_171/src.zip!/java/util/Map.java" />
     <entry file="file://$PROJECT_DIR$/src/main/java/com/bookshop5th/topic.md">
       <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
         <state split_layout="SECOND">
@@ -1650,13 +1660,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/com/bookshop5th/BooksManagerTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="286">
-          <caret line="17" column="10" selection-end-line="71" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/com/bookshop5th/BooksManagerTest.java" />
     <entry file="file://$PROJECT_DIR$/src/main/java/com/calculatePrice/task.md">
       <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
         <state split_layout="SPLIT">
@@ -1667,28 +1671,11 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/bowlingScore7th/BowlingScore.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="44">
-          <caret line="2" column="25" selection-start-line="2" selection-start-column="25" selection-end-line="2" selection-end-column="25" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/com/bowlingScore7th/BowlingScoreTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="242">
-          <caret line="11" selection-start-line="11" selection-end-line="11" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/bowlingScore7th/topic.md">
       <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
         <state split_layout="FIRST">
-          <first_editor relative-caret-position="240">
-            <caret line="10" column="23" selection-start-line="10" selection-start-column="23" selection-end-line="10" selection-end-column="23" />
+          <first_editor relative-caret-position="102">
+            <caret line="6" column="35" selection-start-line="6" selection-start-column="33" selection-end-line="6" selection-end-column="35" />
           </first_editor>
           <second_editor />
         </state>
@@ -1697,10 +1684,55 @@
     <entry file="file://$PROJECT_DIR$/src/main/java/com/bowlingScore7th/task.md">
       <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
         <state split_layout="SPLIT">
-          <first_editor relative-caret-position="387">
-            <caret line="45" column="57" selection-start-line="45" selection-start-column="57" selection-end-line="45" selection-end-column="57" />
+          <first_editor relative-caret-position="459">
+            <caret line="60" column="13" selection-start-line="60" selection-start-column="13" selection-end-line="60" selection-end-column="13" />
           </first_editor>
           <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://C:/Program Files/Java/jdk1.8.0_171/src.zip!/java/util/List.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="208">
+          <caret line="563" column="6" selection-start-line="563" selection-start-column="6" selection-end-line="563" selection-end-column="6" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/bowlingScore7th/BowlingGroup.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="34">
+          <caret line="2" column="13" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
+          <folding>
+            <element signature="e#566#567#0" expanded="true" />
+            <element signature="e#605#606#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/com/bowlingScore7th/BowlingScoreTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="867">
+          <caret line="51" column="3" lean-forward="true" selection-start-line="51" selection-start-column="3" selection-end-line="51" selection-end-column="3" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/bowlingScore7th/BowlingScore.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="472">
+          <caret line="40" column="41" selection-start-line="40" selection-start-column="31" selection-end-line="40" selection-end-column="41" />
+          <folding>
+            <element signature="e#302#303#0" expanded="true" />
+            <element signature="e#332#333#0" expanded="true" />
+            <element signature="e#378#379#0" expanded="true" />
+            <element signature="e#422#423#0" expanded="true" />
+            <element signature="e#1091#1092#0" expanded="true" />
+            <element signature="e#1124#1125#0" expanded="true" />
+            <element signature="e#1105#1106#0" expanded="true" />
+            <element signature="e#1138#1139#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
