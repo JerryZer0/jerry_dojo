@@ -6,6 +6,7 @@ class BowlingScore {
 
   private List<BowlingGroup> bowlingList;
   private int externalScore;
+  private int totalFrames = 10;
 
   BowlingScore(List<BowlingGroup> bowlingList) {
     this.bowlingList = bowlingList;
@@ -21,20 +22,18 @@ class BowlingScore {
 
   int calculate() {
     int totalScore = 0;
-    int spare = 0;
-    int strike = 0;
-    for (int i = 0; i < 10; i++) {
+    for (int i = 0; i < totalFrames - 1; i++) {
       BowlingGroup bowlingGroup = bowlingList.get(i);
-      if (bowlingGroup.getGroupScore() == 10 && i < 9) {
-        if (bowlingGroup.getFirstScore() == 10) {
-          strike += bowlingList.get(i + 1).getGroupScore();
+      totalScore += bowlingGroup.getGroupScore();
+      if (bowlingGroup.getGroupScore() == totalFrames) {
+        if (bowlingGroup.getFirstScore() == totalFrames) {
+          totalScore += bowlingList.get(i + 1).getGroupScore();
         } else {
-          spare += bowlingList.get(i + 1).getFirstScore();
+          totalScore += bowlingList.get(i + 1).getFirstScore();
         }
       }
-      totalScore += bowlingGroup.getGroupScore();
     }
-    totalScore += spare + strike + externalScore;
+    totalScore += bowlingList.get(totalFrames - 1).getGroupScore() + externalScore;
     return totalScore;
   }
 }
