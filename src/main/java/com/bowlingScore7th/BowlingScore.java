@@ -1,48 +1,46 @@
 package com.bowlingScore7th;
 
+import java.util.ArrayList;
 import java.util.List;
 
 class BowlingScore {
 
   private List<BowlingGroup> bowlingList;
-  private int externalScore;
-  private int totalFrames;
+  private List<Integer> externalScores = new ArrayList<>();
+  private final int TOTAL_FRAMES = 10;
 
   BowlingScore(List<BowlingGroup> bowlingList) {
     this.bowlingList = bowlingList;
-    totalFrames = bowlingList.size();
   }
 
-  public int getExternalScore() {
-    return externalScore;
+  public List<Integer> getExternalScores() {
+    return externalScores;
   }
 
-  void setExternalScore(int externalScore) {
-    this.externalScore = externalScore;
+  void setExternalScores(List<Integer> externalScores) {
+    this.externalScores = externalScores;
   }
 
   int calculate() {
     int totalScore = 0;
-    for (int i = 0; i < totalFrames - 1; i++) {
+    for (int i = 0; i < TOTAL_FRAMES - 1; i++) {
       BowlingGroup bowlingGroup = bowlingList.get(i);
       totalScore += bowlingGroup.getGroupScore();
-      if (isSpareOrStrike(bowlingGroup.getGroupScore())) {
-        if (isStrike(bowlingGroup.getFirstScore())) {
-          totalScore += bowlingList.get(i + 1).getGroupScore();
-        } else {
-          totalScore += bowlingList.get(i + 1).getFirstScore();
-        }
+      if (bowlingGroup.getFirstScore() == 10) {
+        totalScore += bowlingList.get(i + 1).getGroupScore();
+      } else if (bowlingGroup.getGroupScore() == 10) {
+        totalScore += bowlingList.get(i + 1).getFirstScore();
       }
     }
-    totalScore += bowlingList.get(totalFrames - 1).getGroupScore() + externalScore;
+    totalScore += bowlingList.get(TOTAL_FRAMES - 1).getGroupScore() + getTotalExternalScore();
     return totalScore;
   }
 
-  private boolean isStrike(int firstScore) {
-    return firstScore == 10;
-  }
-
-  private boolean isSpareOrStrike(int groupScore) {
-    return groupScore == 10;
+  private int getTotalExternalScore() {
+    int totalExternalScore = 0;
+    for (Integer score : externalScores) {
+      totalExternalScore += score;
+    }
+    return totalExternalScore;
   }
 }
