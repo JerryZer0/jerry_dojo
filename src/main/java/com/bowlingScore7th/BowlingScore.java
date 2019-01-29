@@ -5,22 +5,22 @@ import java.util.List;
 
 class BowlingScore {
 
-  private List<BowlingGroup> bowlingList;
+  private List<BowlingFrames> bowlingList;
   private final int TOTAL_FRAMES = 10;
   private final int MAX_SCORE = 10;
   List<Integer> externalScores = new ArrayList<>();
 
-  BowlingScore(List<BowlingGroup> bowlingList) {
+  BowlingScore(List<BowlingFrames> bowlingList) {
     this.bowlingList = bowlingList;
   }
 
-  BowlingScore(List<BowlingGroup> bowlingList, List<Integer> externalScores) {
+  BowlingScore(List<BowlingFrames> bowlingList, List<Integer> externalScores) {
     this.bowlingList = bowlingList;
     this.externalScores = externalScores;
   }
 
   BowlingScore instance() {
-    if (bowlingList.get(TOTAL_FRAMES - 1).getGroupScore() == MAX_SCORE) {
+    if (bowlingList.get(TOTAL_FRAMES - 1).getFrameScore() == MAX_SCORE) {
       return new ExternalBowlingScore(bowlingList, externalScores);
     }
     return this;
@@ -29,15 +29,15 @@ class BowlingScore {
   int calculate() {
     int totalScore = 0;
     for (int i = 0; i < TOTAL_FRAMES - 1; i++) {
-      BowlingGroup bowlingGroup = bowlingList.get(i);
-      totalScore += bowlingGroup.getGroupScore();
-      if (bowlingGroup.getFirstScore() == MAX_SCORE) {
-        totalScore += bowlingList.get(i + 1).getGroupScore();
-      } else if (bowlingGroup.getGroupScore() == MAX_SCORE) {
+      BowlingFrames bowlingFrames = bowlingList.get(i);
+      totalScore += bowlingFrames.getFrameScore();
+      if (bowlingFrames.getFirstScore() == MAX_SCORE) {
+        totalScore += bowlingList.get(i + 1).getFrameScore();
+      } else if (bowlingFrames.getFrameScore() == MAX_SCORE) {
         totalScore += bowlingList.get(i + 1).getFirstScore();
       }
     }
-    totalScore += bowlingList.get(TOTAL_FRAMES - 1).getGroupScore();
+    totalScore += bowlingList.get(TOTAL_FRAMES - 1).getFrameScore();
     return totalScore;
   }
 }

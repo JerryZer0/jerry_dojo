@@ -4,7 +4,7 @@ import java.util.List;
 
 public class ExternalBowlingScore extends BowlingScore {
 
-  ExternalBowlingScore(List<BowlingGroup> bowlingList, List<Integer> externalScores) {
+  ExternalBowlingScore(List<BowlingFrames> bowlingList, List<Integer> externalScores) {
     super(bowlingList, externalScores);
   }
 
