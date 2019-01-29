@@ -2,9 +2,9 @@ package com.bowlingScore7th;
 
 import java.util.List;
 
-public class ExternalBowlingScore extends BowlingScore {
+class ExternalBowlingScore extends BowlingScore {
 
-  ExternalBowlingScore(List<BowlingFrames> bowlingList, List<Integer> externalScores) {
+  ExternalBowlingScore(List<BowlingFrame> bowlingList, List<Integer> externalScores) {
     super(bowlingList, externalScores);
   }
 

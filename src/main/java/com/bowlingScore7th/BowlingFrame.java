@@ -1,17 +1,17 @@
 package com.bowlingScore7th;
 
-class BowlingFrames {
+class BowlingFrame {
 
   private int firstScore;
   private int secondScore;
   private final int BASE_SCORE = 1;
 
-  BowlingFrames(int firstPins, int secondPins) {
-    this.firstScore = firstPins * BASE_SCORE;
-    this.secondScore = secondPins * BASE_SCORE;
+  BowlingFrame(int firstRoll, int secondRoll) {
+    this.firstScore = firstRoll * BASE_SCORE;
+    this.secondScore = secondRoll * BASE_SCORE;
   }
 
-  public int getFirstScore() {
+  int getFirstScore() {
     return firstScore;
   }
 
