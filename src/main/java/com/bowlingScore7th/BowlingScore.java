@@ -6,10 +6,11 @@ class BowlingScore {
 
   private List<BowlingGroup> bowlingList;
   private int externalScore;
-  private int totalFrames = 10;
+  private int totalFrames;
 
   BowlingScore(List<BowlingGroup> bowlingList) {
     this.bowlingList = bowlingList;
+    totalFrames = bowlingList.size();
   }
 
   public int getExternalScore() {
