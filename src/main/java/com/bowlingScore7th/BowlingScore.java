@@ -26,8 +26,8 @@ class BowlingScore {
     for (int i = 0; i < totalFrames - 1; i++) {
       BowlingGroup bowlingGroup = bowlingList.get(i);
       totalScore += bowlingGroup.getGroupScore();
-      if (bowlingGroup.getGroupScore() == totalFrames) {
-        if (bowlingGroup.getFirstScore() == totalFrames) {
+      if (bowlingGroup.getGroupScore() == 10) {
+        if (bowlingGroup.getFirstScore() == 10) {
           totalScore += bowlingList.get(i + 1).getGroupScore();
         } else {
           totalScore += bowlingList.get(i + 1).getFirstScore();
