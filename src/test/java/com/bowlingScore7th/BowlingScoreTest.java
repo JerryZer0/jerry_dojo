@@ -30,7 +30,7 @@ public class BowlingScoreTest {
   }
 
   @Test
-  public void should_return_99_when_call_calculate_score_given_ten_groups_of_scores_with_first_group_total_score_is_10() {
+  public void should_return_98_when_call_calculate_score_given_ten_groups_of_scores_with_first_group_total_score_is_10() {
     List<BowlingGroup> bowlingList = initData();
     bowlingList.set(0, new BowlingGroup(8, 2));
     BowlingScore score = new BowlingScore(bowlingList);
@@ -41,7 +41,7 @@ public class BowlingScoreTest {
   }
 
   @Test
-  public void should_return_99_when_call_calculate_score_given_ten_groups_of_scores_with_second_group_total_score_is_10() {
+  public void should_return_98_when_call_calculate_score_given_ten_groups_of_scores_with_second_group_total_score_is_10() {
     List<BowlingGroup> bowlingList = initData();
     bowlingList.set(1, new BowlingGroup(8, 2));
     BowlingScore score = new BowlingScore(bowlingList);
