@@ -34,17 +34,6 @@ return "One-All"
 - case 4
 ```text
 //given
-3 turns and player1 has 3 points
-
-//when
-calculate result
-
-//then
-return "Three-Love"
-```
-- case 5
-```text
-//given
 4 turns and player1 has 4 points
 
 //when
@@ -53,7 +42,7 @@ calculate result
 //then
 return "Player1-Win"
 ```
-- case 6
+- case 5
 ```text
 //given
 6 turns and player1 has 3 points and player2 has 3 points
@@ -64,7 +53,7 @@ calculate result
 //then
 return "Deuce"
 ```
-- case 7
+- case 6
 ```text
 //given
 7 turns and player1 has 4 points and player2 has 3 points
@@ -75,7 +64,7 @@ calculate result
 //then
 return "Player1-Advantage"
 ```
-- case 8
+- case 7
 ```text
 //given
 8 turns and player1 has 5 points and player2 has 3 points
