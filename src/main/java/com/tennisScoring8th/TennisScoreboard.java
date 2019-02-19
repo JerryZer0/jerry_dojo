@@ -21,7 +21,7 @@ public class TennisScoreboard {
     SCORE.put(3, "Three");
   }
 
-  public TennisScoreboard instance() {
+  TennisScoreboard instance() {
     if (playerScore1 == playerScore2) {
       return new EqualScore(playerScore1);
     }
