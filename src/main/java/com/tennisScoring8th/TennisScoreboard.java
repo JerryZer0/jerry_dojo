@@ -23,6 +23,9 @@ class TennisScoreboard {
   }
 
   public String calculate() {
-    return SCORE.get(playerScore1)+"-"+SCORE.get(playerScore2);
+    if (playerScore1 == playerScore2) {
+      return SCORE.get(playerScore1) + "-All";
+    }
+    return SCORE.get(playerScore1) + "-" + SCORE.get(playerScore2);
   }
 }
