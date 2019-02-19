@@ -60,4 +60,15 @@ public class TennisScoreboardTest {
 
     assertEquals("Deuce",result);
   }
+
+  @Test
+  public void should_return_Player1_Advantage_when_calculate_given_6_turns_player1_has_4_points_and_player2_has_3_points(){
+    int player1 = 4;
+    int player2 = 3;
+    TennisScoreboard tennisScoreboard = new TennisScoreboard(player1,player2);
+
+    String result = tennisScoreboard.calculate();
+
+    assertEquals("Player1-Advantage",result);
+  }
 }
