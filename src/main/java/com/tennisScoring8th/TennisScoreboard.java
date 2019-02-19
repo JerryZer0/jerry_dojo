@@ -10,8 +10,7 @@ class TennisScoreboard {
     this.playerScore2 = playerScore2;
   }
 
-
   public String calculate() {
-    return null;
+    return "One-Love";
   }
 }
