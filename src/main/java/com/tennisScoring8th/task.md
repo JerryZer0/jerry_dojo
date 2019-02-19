@@ -64,14 +64,3 @@ calculate result
 //then
 return "Player1-Advantage"
 ```
-- case 7
-```text
-//given
-8 turns and player1 has 5 points and player2 has 3 points
-
-//when
-calculate result
-
-//then
-return "Player1-Win"
-```
