@@ -1,14 +1,13 @@
 Tennis Scoring:
 
 1. If you have 3 points and you win the ball you win the game, however there are special rules.
-
 2. If both have 3 points the players are deuce. 
-a. If the game is in deuce, the winner of a ball will have advantage. 
-b. If the player with advantage wins the ball he wins the game 
-c. If the player without advantage wins they are back at deuce.
+- If the game is in deuce, the winner of a ball will have advantage.
+- If the player with advantage wins the ball he wins the game
+- If the player without advantage wins they are back at deuce.
 ### Rules:   
 
-Turn | Player1 | Turn | Player1
+Turn | Player1 | Player2 | Result
 ---|---|---|---
 1	|1	|0	|One-Love
 2	|1	|1	|One-All
