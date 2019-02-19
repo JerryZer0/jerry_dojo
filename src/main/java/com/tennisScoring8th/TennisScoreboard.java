@@ -37,8 +37,8 @@ class TennisScoreboard {
     if (playerScore1 == playerScore2) {
       return DEUCE;
     }
-    if (playerScore1 - playerScore2 == 1) {
-      return PLAYER1_ADVANTAGE;
+    if (playerScore1 - playerScore2 == 1||playerScore2 - playerScore1 == 1) {
+      return playerScore1 > playerScore2?PLAYER1_ADVANTAGE:PLAYER2_ADVANTAGE;
     }
     return playerScore1 > playerScore2 ? PLAYER1_WIN : PLAYER2_WIN;
   }
