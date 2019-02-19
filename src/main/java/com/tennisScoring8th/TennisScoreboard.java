@@ -11,6 +11,7 @@ class TennisScoreboard {
   private static final Map<Integer, String> SCORE = new HashMap<>();
   String PLAYER1_WIN = "Player1-Win";
   String PLAYER2_WIN = "Player2-Win";
+  String DEUCE = "Deuce";
 
   static {
     SCORE.put(0, "Love");
@@ -25,11 +26,14 @@ class TennisScoreboard {
   }
 
   public String calculate() {
-    if (playerScore1 <= 3 && playerScore2 <= 3) {
+    if ( (playerScore1 <= 3 && playerScore2 < 3) || (playerScore1 < 3 && playerScore2 <= 3)) {
       if (playerScore1 == playerScore2) {
         return SCORE.get(playerScore1) + "-All";
       }
       return SCORE.get(playerScore1) + "-" + SCORE.get(playerScore2);
+    }
+    if (playerScore1 == playerScore2) {
+      return DEUCE;
     }
     return playerScore1>playerScore2? PLAYER1_WIN : PLAYER2_WIN;
   }

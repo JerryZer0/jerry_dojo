@@ -40,7 +40,7 @@ public class TennisScoreboardTest {
   }
 
   @Test
-  public void should_return_Player1_Win_when_calculate_given_4_turns_player1_has_4_point(){
+  public void should_return_Player1_Win_when_calculate_given_4_turns_player1_has_4_points(){
     int player1 = 4;
     int player2 = 0;
     TennisScoreboard tennisScoreboard = new TennisScoreboard(player1,player2);
@@ -48,5 +48,16 @@ public class TennisScoreboardTest {
     String result = tennisScoreboard.calculate();
 
     assertEquals("Player1-Win",result);
+  }
+
+  @Test
+  public void should_return_Deuce_when_calculate_given_6_turns_player1_has_3_points_and_player2_has_3_points(){
+    int player1 = 3;
+    int player2 = 3;
+    TennisScoreboard tennisScoreboard = new TennisScoreboard(player1,player2);
+
+    String result = tennisScoreboard.calculate();
+
+    assertEquals("Deuce",result);
   }
 }
